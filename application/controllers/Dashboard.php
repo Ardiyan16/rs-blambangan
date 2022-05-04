@@ -62,4 +62,10 @@ class Dashboard extends CI_Controller
 		$data['daftar'] = $this->m_artikel->get_pendaftaran2();
 		$this->load->view('admin/antrian_selesai', $data);
 	}
+
+	public function coba()
+	{
+		$data = $this->m_artikel->antri_klinik_anak();
+		var_dump($data);
+	}
 }

@@ -56,7 +56,7 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto" href="<?= base_url('Users') ?>">Home</a></li>
-                    <li><a class="nav-link scrollto" href="<?= base_url('Users/pendaftaran') ?>">Pendaftaran Pasien</a></li>
+                    <li><a class="nav-link scrollto" href="<?= base_url('Users/pilih_klinik') ?>">Pendaftaran Pasien</a></li>
                     <li><a class="nav-link scrollto" href="<?= base_url('Users/riwayat') ?>">Riwayat Perawatan Anda</a></li>
                     <li><a class="nav-link scrollto" href="<?= base_url('Users/profile') ?>">Profil</a></li>
                     <li><a class="getstarted scrollto" href="#"><?= $this->session->userdata('nama') ?></a></li>

@@ -11,11 +11,147 @@ class antrian_model extends CI_Model
         return $this->db->get($this->poli)->result();
     }
 
-    function max_daftar()
+    public function get_pendaftaran()
     {
         $date = date('Y-m-d');
-        // var_dump($date);
-        return $this->db->query("SELECT max(no_antrian) as maxs FROM pendaftaran WHERE tgl_pendaftaran = '$date' order by no_antrian desc limit 1")->row();
+        $nik = $this->session->userdata('nik');
+        $this->db->select('*');
+        $this->db->from('pendaftaran');
+        $this->db->where('tgl_pendaftaran', $date);
+        $this->db->where('nik_users', $nik);
+        return $this->db->get()->result();
+    }
+
+    function max_klinik_anak()
+    {
+        $date = date('Y-m-d');
+        return $this->db->query("SELECT max(no_antrian) as maxs FROM pendaftaran WHERE tgl_pendaftaran = '$date' AND id_poli = '1' order by no_antrian desc limit 1")->row();
+    }
+
+    function max_klinik_anesthesi()
+    {
+        $date = date('Y-m-d');
+        return $this->db->query("SELECT max(no_antrian) as maxs FROM pendaftaran WHERE tgl_pendaftaran = '$date' AND id_poli = '2' order by no_antrian desc limit 1")->row();
+    }
+
+    function max_klinik_bedahortopedhi()
+    {
+        $date = date('Y-m-d');
+        return $this->db->query("SELECT max(no_antrian) as maxs FROM pendaftaran WHERE tgl_pendaftaran = '$date' AND id_poli = '3' order by no_antrian desc limit 1")->row();
+    }
+
+    function max_klinik_bedahumum()
+    {
+        $date = date('Y-m-d');
+        return $this->db->query("SELECT max(no_antrian) as maxs FROM pendaftaran WHERE tgl_pendaftaran = '$date' AND id_poli = '4' order by no_antrian desc limit 1")->row();
+    }
+
+    function max_klinik_bedahsyaraf()
+    {
+        $date = date('Y-m-d');
+        return $this->db->query("SELECT max(no_antrian) as maxs FROM pendaftaran WHERE tgl_pendaftaran = '$date' AND id_poli = '5' order by no_antrian desc limit 1")->row();
+    }
+
+    function max_klinik_fnab()
+    {
+        $date = date('Y-m-d');
+        return $this->db->query("SELECT max(no_antrian) as maxs FROM pendaftaran WHERE tgl_pendaftaran = '$date' AND id_poli = '6' order by no_antrian desc limit 1")->row();
+    }
+
+    function max_klinik_gigimulut()
+    {
+        $date = date('Y-m-d');
+        return $this->db->query("SELECT max(no_antrian) as maxs FROM pendaftaran WHERE tgl_pendaftaran = '$date' AND id_poli = '7' order by no_antrian desc limit 1")->row();
+    }
+
+    function max_klinik_gizi()
+    {
+        $date = date('Y-m-d');
+        return $this->db->query("SELECT max(no_antrian) as maxs FROM pendaftaran WHERE tgl_pendaftaran = '$date' AND id_poli = '8' order by no_antrian desc limit 1")->row();
+    }
+
+    function max_klinik_jantung()
+    {
+        $date = date('Y-m-d');
+        return $this->db->query("SELECT max(no_antrian) as maxs FROM pendaftaran WHERE tgl_pendaftaran = '$date' AND id_poli = '9' order by no_antrian desc limit 1")->row();
+    }
+
+    function max_klinik_jiwa()
+    {
+        $date = date('Y-m-d');
+        return $this->db->query("SELECT max(no_antrian) as maxs FROM pendaftaran WHERE tgl_pendaftaran = '$date' AND id_poli = '10' order by no_antrian desc limit 1")->row();
+    }
+
+    function max_klinik_kulitkelamin()
+    {
+        $date = date('Y-m-d');
+        return $this->db->query("SELECT max(no_antrian) as maxs FROM pendaftaran WHERE tgl_pendaftaran = '$date' AND id_poli = '11' order by no_antrian desc limit 1")->row();
+    }
+
+    function max_klinik_mata()
+    {
+        $date = date('Y-m-d');
+        return $this->db->query("SELECT max(no_antrian) as maxs FROM pendaftaran WHERE tgl_pendaftaran = '$date' AND id_poli = '12' order by no_antrian desc limit 1")->row();
+    }
+
+    function max_klinik_obgyn()
+    {
+        $date = date('Y-m-d');
+        return $this->db->query("SELECT max(no_antrian) as maxs FROM pendaftaran WHERE tgl_pendaftaran = '$date' AND id_poli = '13' order by no_antrian desc limit 1")->row();
+    }
+
+    function max_klinik_paru()
+    {
+        $date = date('Y-m-d');
+        return $this->db->query("SELECT max(no_antrian) as maxs FROM pendaftaran WHERE tgl_pendaftaran = '$date' AND id_poli = '14' order by no_antrian desc limit 1")->row();
+    }
+
+    function max_klinik_penyakitdalam()
+    {
+        $date = date('Y-m-d');
+        return $this->db->query("SELECT max(no_antrian) as maxs FROM pendaftaran WHERE tgl_pendaftaran = '$date' AND id_poli = '15' order by no_antrian desc limit 1")->row();
+    }
+
+    function max_klinik_psikologi()
+    {
+        $date = date('Y-m-d');
+        return $this->db->query("SELECT max(no_antrian) as maxs FROM pendaftaran WHERE tgl_pendaftaran = '$date' AND id_poli = '16' order by no_antrian desc limit 1")->row();
+    }
+
+    function max_klinik_rehabmedik()
+    {
+        $date = date('Y-m-d');
+        return $this->db->query("SELECT max(no_antrian) as maxs FROM pendaftaran WHERE tgl_pendaftaran = '$date' AND id_poli = '17' order by no_antrian desc limit 1")->row();
+    }
+
+    function max_klinik_spesialisgigimulut()
+    {
+        $date = date('Y-m-d');
+        return $this->db->query("SELECT max(no_antrian) as maxs FROM pendaftaran WHERE tgl_pendaftaran = '$date' AND id_poli = '18' order by no_antrian desc limit 1")->row();
+    }
+
+    function max_klinik_syaraf()
+    {
+        $date = date('Y-m-d');
+        return $this->db->query("SELECT max(no_antrian) as maxs FROM pendaftaran WHERE tgl_pendaftaran = '$date' AND id_poli = '19' order by no_antrian desc limit 1")->row();
+    }
+
+    function max_klinik_tht()
+    {
+        $date = date('Y-m-d');
+        return $this->db->query("SELECT max(no_antrian) as maxs FROM pendaftaran WHERE tgl_pendaftaran = '$date' AND id_poli = '20' order by no_antrian desc limit 1")->row();
+    }
+
+    function max_klinik_urologi()
+    {
+        $date = date('Y-m-d');
+        return $this->db->query("SELECT max(no_antrian) as maxs FROM pendaftaran WHERE tgl_pendaftaran = '$date' AND id_poli = '21' order by no_antrian desc limit 1")->row();
+    }
+
+    function max_klinik_vct()
+    {
+        $date = date('Y-m-d');
+        return $this->db->query("SELECT max(no_antrian) as maxs FROM pendaftaran WHERE tgl_pendaftaran = '$date' AND id_poli = '22' order by no_antrian desc limit 1")->row();
     }
 
     public function ambil_antrian()

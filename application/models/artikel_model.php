@@ -24,6 +24,62 @@ class artikel_model extends CI_Model
     return $data;
   }
 
+  public function antri_klinik_anak()
+  {
+    $this->db->where('id_poli', 1);
+    $this->db->where('status', 1);
+    return $this->db->count_all_results('pendaftaran');
+  }
+
+  public function antri_klinik_anesthesi()
+  {
+    $this->db->where('id_poli', 2);
+    $this->db->where('status', 1);
+    return $this->db->count_all_results('pendaftaran');
+  }
+
+  public function antri_klinik_bedahortopedhi()
+  {
+    $this->db->where('id_poli', 3);
+    $this->db->where('status', 1);
+    return $this->db->count_all_results('pendaftaran');
+  }
+
+  public function antri_klinik_bedahumum()
+  {
+    $this->db->where('id_poli', 4);
+    $this->db->where('status', 1);
+    return $this->db->count_all_results('pendaftaran');
+  }
+
+  public function antri_klinik_bedahsyaraf()
+  {
+    $this->db->where('id_poli', 5);
+    $this->db->where('status', 1);
+    return $this->db->count_all_results('pendaftaran');
+  }
+
+  public function antri_klinik_fnab()
+  {
+    $this->db->where('id_poli', 6);
+    $this->db->where('status', 1);
+    return $this->db->count_all_results('pendaftaran');
+  }
+
+  public function antri_klinik_gigimulut()
+  {
+    $this->db->where('id_poli', 7);
+    $this->db->where('status', 1);
+    return $this->db->count_all_results('pendaftaran');
+  }
+
+  public function antri_klinik_jantung()
+  {
+    $this->db->where('id_poli', 8);
+    $this->db->where('status', 1);
+    return $this->db->count_all_results('pendaftaran');
+  }
+
   public function get_user()
   {
     return $this->db->get_where('users', ['status' => 0])->result();

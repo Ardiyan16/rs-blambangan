@@ -19,7 +19,7 @@
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
-                <h2>Pendaftaran Pasien Klinik Anak</h2>
+                <h2>Pendaftaran Pasien Klinik Jiwa</h2>
             </div>
 
             <!-- <div class="row">
@@ -71,7 +71,7 @@
                             <input type="date" class="form-control" readonly value="<?= date('Y-m-d') ?>" name="tgl_pendaftaran" id="subject" placeholder="Subject">
                         </div>
                         <div class="form-group mt-3">
-                            <input type="hidden" class="form-control" readonly name="id_poli" value="1" id="subject" placeholder="Subject">
+                            <input type="hidden" class="form-control" readonly name="id_poli" value="10" id="subject" placeholder="Subject">
                         </div>
                         <input type="hidden" class="form-control" name="no_antrian" id="antrian" placeholder="Subject">
                         <!-- <div class="my-3">
@@ -152,7 +152,7 @@
             scrollTop: 0
         }, 0);
         $.ajax({
-            url: "<?php echo base_url() . 'Users/max_klinik_anak'; ?>",
+            url: "<?php echo base_url() . 'Users/max_klinik_jiwa'; ?>",
             dataType: 'json',
             method: 'POST',
             success: function(json) {
