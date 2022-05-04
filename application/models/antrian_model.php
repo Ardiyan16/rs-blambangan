@@ -19,7 +19,8 @@ class antrian_model extends CI_Model
         $this->db->from('pendaftaran');
         $this->db->where('tgl_pendaftaran', $date);
         $this->db->where('nik_users', $nik);
-        return $this->db->get()->result();
+        $this->db->order_by('id', 'desc');
+        return $this->db->get()->row();
     }
 
     function max_klinik_anak()
@@ -193,19 +194,32 @@ class antrian_model extends CI_Model
 
     public function get_riwayat($nik)
     {
-        $this->db->select('*');
         $this->db->from('pendaftaran');
+        $this->db->select('pendaftaran.*, poli.poli');
         $this->db->join('poli', 'pendaftaran.id_poli = poli.id');
         $this->db->where('nik_users', $nik);
+        $this->db->order_by('id', 'desc');
         return $this->db->get()->result();
     }
 
-    // public function get_detail_riwayat($id)
-    // {
-    //     $this->db->select('*');
-    //     $this->db->from('pendaftaran');
-    //     $this->db->join('poli', 'pendaftaran.id_poli = poli.id');
-    //     $this->db->where('pendaftaran.id', $id);
-    //     return $this->db->get()->row();
-    // }
+    public function get_detail_riwayat($id)
+    {
+        $this->db->select('*');
+        $this->db->from('pendaftaran');
+        $this->db->join('users', 'pendaftaran.nik_users = users.nik');
+        $this->db->join('poli', 'pendaftaran.id_poli = poli.id');
+        $this->db->where('pendaftaran.id', $id);
+        return $this->db->get()->row();
+    }
+
+    public function sisa_antrian($id_poli)
+    {
+        $date = date('Y-m-d');
+        $nik = $this->session->userdata('nik');
+        $this->db->where('nik_users', $nik);
+        $this->db->where('status', 1);
+        $this->db->where('id_poli', $id_poli);
+        $this->db->where('tgl_pendaftaran', $date);
+        return $this->db->count_all_results('pendaftaran');
+    }
 }

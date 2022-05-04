@@ -31,7 +31,7 @@
                             <th>Poli</th>
                             <th>Tanggal</th>
                             <th>No Antrian</th>
-                            <!-- <th></th> -->
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -40,9 +40,9 @@
                                 <td><?= $rw->poli ?></td>
                                 <td><?= $rw->tgl_pendaftaran ?></td>
                                 <td><?= $rw->no_antrian ?></td>
-                                <!-- <td>
+                                <td>
                                     <a href="<?= base_url('Users/detail_riwayat/'. $rw->id) ?>" class="btn btn-primary btn-small"> Show Detail</a>
-                                </td> -->
+                                </td>
                             </tr>
                         <?php } ?>
                     </tbody>

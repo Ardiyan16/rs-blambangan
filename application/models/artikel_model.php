@@ -73,9 +73,107 @@ class artikel_model extends CI_Model
     return $this->db->count_all_results('pendaftaran');
   }
 
-  public function antri_klinik_jantung()
+  public function antri_klinik_gizi()
   {
     $this->db->where('id_poli', 8);
+    $this->db->where('status', 1);
+    return $this->db->count_all_results('pendaftaran');
+  }
+
+  public function antri_klinik_jantung()
+  {
+    $this->db->where('id_poli', 9);
+    $this->db->where('status', 1);
+    return $this->db->count_all_results('pendaftaran');
+  }
+
+  public function antri_klinik_jiwa()
+  {
+    $this->db->where('id_poli', 10);
+    $this->db->where('status', 1);
+    return $this->db->count_all_results('pendaftaran');
+  }
+
+  public function antri_klinik_kulitkelamin()
+  {
+    $this->db->where('id_poli', 11);
+    $this->db->where('status', 1);
+    return $this->db->count_all_results('pendaftaran');
+  }
+  
+  public function antri_klinik_mata()
+  {
+    $this->db->where('id_poli', 12);
+    $this->db->where('status', 1);
+    return $this->db->count_all_results('pendaftaran');
+  }
+
+  public function antri_klinik_obgyn()
+  {
+    $this->db->where('id_poli', 13);
+    $this->db->where('status', 1);
+    return $this->db->count_all_results('pendaftaran');
+  }
+
+  public function antri_klinik_paru()
+  {
+    $this->db->where('id_poli', 14);
+    $this->db->where('status', 1);
+    return $this->db->count_all_results('pendaftaran');
+  }
+
+  public function antri_klinik_penyakitdalam()
+  {
+    $this->db->where('id_poli', 15);
+    $this->db->where('status', 1);
+    return $this->db->count_all_results('pendaftaran');
+  }
+
+  public function antri_klinik_psikologi()
+  {
+    $this->db->where('id_poli', 16);
+    $this->db->where('status', 1);
+    return $this->db->count_all_results('pendaftaran');
+  }
+
+  public function antri_klinik_rehabmedik()
+  {
+    $this->db->where('id_poli', 17);
+    $this->db->where('status', 1);
+    return $this->db->count_all_results('pendaftaran');
+  }
+
+  public function antri_klinik_spesialisgigimulut()
+  {
+    $this->db->where('id_poli', 18);
+    $this->db->where('status', 1);
+    return $this->db->count_all_results('pendaftaran');
+  }
+
+  public function antri_klinik_syaraf()
+  {
+    $this->db->where('id_poli', 19);
+    $this->db->where('status', 1);
+    return $this->db->count_all_results('pendaftaran');
+  }
+
+  public function antri_klinik_tht()
+  {
+    $this->db->where('id_poli', 20);
+    $this->db->where('status', 1);
+    return $this->db->count_all_results('pendaftaran');
+  }
+
+  public function antri_klinik_urologi()
+  {
+    $this->db->where('id_poli', 21);
+    $this->db->where('status', 1);
+    return $this->db->count_all_results('pendaftaran');
+  }
+
+  public function antri_klinik_vct()
+  {
+    $this->db->where('id_poli', 22);
     $this->db->where('status', 1);
     return $this->db->count_all_results('pendaftaran');
   }

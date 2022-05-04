@@ -176,22 +176,334 @@ class Users extends CI_Controller
         $this->load->view('users/pendaftaran22', $data);
     }
 
-    public function save_pendaftaran()
+    public function save_pendaftaran1()
     {
-        // $data = $this->m_antrian->get_pendaftaran();
-        // // $nik = $this->input->post('nik_users');
-        // // $tgl = $this->input->post('tgl_pendaftaran');
-        // foreach ($data as $data) {
-        //     if ($data->status == 1) {
-        //         $this->session->set_flashdata('sudahdaftar', true);
-        //         redirect('Users/pendaftaran');
-        //     } 
-            // elseif ($data->status == 2) {
+        $data = $this->m_antrian->get_pendaftaran();
+        $nik = $this->input->post('nik_users');
+        // $tgl = $this->input->post('tgl_pendaftaran');
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran1');
+            } else {
                 $this->m_antrian->save_pendaftaran();
                 $this->session->set_flashdata('insert', true);
                 redirect('Users/konfirmasi');
-        //     }
-        // }
+            }
+    }
+
+    public function save_pendaftaran2()
+    {
+        $data = $this->m_antrian->get_pendaftaran();
+        $nik = $this->input->post('nik_users');
+        // $tgl = $this->input->post('tgl_pendaftaran');
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran2');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi');
+            }
+    }
+
+    public function save_pendaftaran3()
+    {
+        $data = $this->m_antrian->get_pendaftaran();
+        $nik = $this->input->post('nik_users');
+        // $tgl = $this->input->post('tgl_pendaftaran');
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran3');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi');
+            }
+    }
+
+    public function save_pendaftaran4()
+    {
+        $data = $this->m_antrian->get_pendaftaran();
+        $nik = $this->input->post('nik_users');
+        // $tgl = $this->input->post('tgl_pendaftaran');
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran4');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi');
+            }
+    }
+
+    public function save_pendaftaran5()
+    {
+        $data = $this->m_antrian->get_pendaftaran();
+        $nik = $this->input->post('nik_users');
+        // $tgl = $this->input->post('tgl_pendaftaran');
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran5');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi');
+            }
+    }
+
+    public function save_pendaftaran6()
+    {
+        $data = $this->m_antrian->get_pendaftaran();
+        $nik = $this->input->post('nik_users');
+        // $tgl = $this->input->post('tgl_pendaftaran');
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran6');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi');
+            }
+    }
+
+    public function save_pendaftaran7()
+    {
+        $data = $this->m_antrian->get_pendaftaran();
+        $nik = $this->input->post('nik_users');
+        // $tgl = $this->input->post('tgl_pendaftaran');
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran7');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi');
+            }
+    }
+
+    public function save_pendaftaran8()
+    {
+        $data = $this->m_antrian->get_pendaftaran();
+        $nik = $this->input->post('nik_users');
+        // $tgl = $this->input->post('tgl_pendaftaran');
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran8');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi');
+            }
+    }
+
+    public function save_pendaftaran9()
+    {
+        $data = $this->m_antrian->get_pendaftaran();
+        $nik = $this->input->post('nik_users');
+        // $tgl = $this->input->post('tgl_pendaftaran');
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran9');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi');
+            }
+    }
+
+    public function save_pendaftaran10()
+    {
+        $data = $this->m_antrian->get_pendaftaran();
+        $nik = $this->input->post('nik_users');
+        // $tgl = $this->input->post('tgl_pendaftaran');
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran10');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi');
+            }
+    }
+
+    public function save_pendaftaran11()
+    {
+        $data = $this->m_antrian->get_pendaftaran();
+        $nik = $this->input->post('nik_users');
+        // $tgl = $this->input->post('tgl_pendaftaran');
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran11');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi');
+            }
+    }
+
+    public function save_pendaftaran12()
+    {
+        $data = $this->m_antrian->get_pendaftaran();
+        $nik = $this->input->post('nik_users');
+        // $tgl = $this->input->post('tgl_pendaftaran');
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran12');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi');
+            }
+    }
+
+    public function save_pendaftaran13()
+    {
+        $data = $this->m_antrian->get_pendaftaran();
+        $nik = $this->input->post('nik_users');
+        // $tgl = $this->input->post('tgl_pendaftaran');
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran13');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi');
+            }
+    }
+
+    public function save_pendaftaran14()
+    {
+        $data = $this->m_antrian->get_pendaftaran();
+        $nik = $this->input->post('nik_users');
+        // $tgl = $this->input->post('tgl_pendaftaran');
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran14');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi');
+            }
+    }
+
+    public function save_pendaftaran15()
+    {
+        $data = $this->m_antrian->get_pendaftaran();
+        $nik = $this->input->post('nik_users');
+        // $tgl = $this->input->post('tgl_pendaftaran');
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran15');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi');
+            }
+    }
+
+    public function save_pendaftaran16()
+    {
+        $data = $this->m_antrian->get_pendaftaran();
+        $nik = $this->input->post('nik_users');
+        // $tgl = $this->input->post('tgl_pendaftaran');
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran16');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi');
+            }
+    }
+
+    public function save_pendaftaran17()
+    {
+        $data = $this->m_antrian->get_pendaftaran();
+        $nik = $this->input->post('nik_users');
+        // $tgl = $this->input->post('tgl_pendaftaran');
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran17');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi');
+            }
+    }
+
+    public function save_pendaftaran18()
+    {
+        $data = $this->m_antrian->get_pendaftaran();
+        $nik = $this->input->post('nik_users');
+        // $tgl = $this->input->post('tgl_pendaftaran');
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran18');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi');
+            }
+    }
+
+    public function save_pendaftaran19()
+    {
+        $data = $this->m_antrian->get_pendaftaran();
+        $nik = $this->input->post('nik_users');
+        // $tgl = $this->input->post('tgl_pendaftaran');
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran19');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi');
+            }
+    }
+
+    public function save_pendaftaran20()
+    {
+        $data = $this->m_antrian->get_pendaftaran();
+        $nik = $this->input->post('nik_users');
+        // $tgl = $this->input->post('tgl_pendaftaran');
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran20');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi');
+            }
+    }
+
+    public function save_pendaftaran21()
+    {
+        $data = $this->m_antrian->get_pendaftaran();
+        $nik = $this->input->post('nik_users');
+        // $tgl = $this->input->post('tgl_pendaftaran');
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran21');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi');
+            }
+    }
+
+    public function save_pendaftaran22()
+    {
+        $data = $this->m_antrian->get_pendaftaran();
+        $nik = $this->input->post('nik_users');
+        // $tgl = $this->input->post('tgl_pendaftaran');
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran22');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi');
+            }
     }
 
     public function konfirmasi()
@@ -363,8 +675,9 @@ class Users extends CI_Controller
     {
         // $no_rm = $this->session->userdata('no_rm');
         $data['title'] = 'Riwayat';
-        $data['detail'] = $this->db->get_where('pendaftaran', ['id' => $id])->row_array();
-        // var_dump($data['riwayat']);
+        $data['detail'] = $this->m_antrian->get_detail_riwayat($id);
+        $id_poli = $data['detail']->id_poli;
+        $data['sisa'] = $this->m_antrian->sisa_antrian($id_poli) - 1;
         $this->load->view('users/detail_riwayat', $data);
     }
 
@@ -376,7 +689,7 @@ class Users extends CI_Controller
 
     public function coba()
     {
-        
+
         $data = $this->m_antrian->max_daftar();
         var_dump($data['max_pendaftaran']);
     }

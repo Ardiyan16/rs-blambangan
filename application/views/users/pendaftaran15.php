@@ -56,7 +56,7 @@
                 </div> -->
 
                 <div class="col-lg-12">
-                    <form action="<?= base_url('Users/save_pendaftaran') ?>" method="post" role="form">
+                    <form action="<?= base_url('Users/save_pendaftaran15') ?>" method="post" role="form">
                         <div class="form-group mt-3">
                             <label>Nama</label>
                             <input type="text" class="form-control" value="<?= $this->session->userdata('nama') ?>" id="subject" readonly placeholder="Subject">
