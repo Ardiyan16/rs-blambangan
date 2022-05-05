@@ -518,7 +518,7 @@ class Users extends CI_Controller
 				$userkey = 'fa5793a42b9a';
 $passkey = 'd3bea3d15985f7ef232a4e9b';
 $telepon = '085156484672';
-$message = 'Sisa Antrian Atas Nama ';
+$message = 'Sisa Antrian Atas Nama '.$nama.' dengan nomor antrian '.$antrian->no_antrian.'. Antrian anda akan dilaksanakan kurang lebih '.$sisanya.' menit lagi';
 $url = 'https://console.zenziva.net/wareguler/api/sendWA/';
 $curlHandle = curl_init();
 curl_setopt($curlHandle, CURLOPT_URL, $url);
