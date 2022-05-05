@@ -216,7 +216,7 @@ class antrian_model extends CI_Model
     {
         $date = date('Y-m-d');
         $nik = $this->session->userdata('nik');
-        $this->db->where('nik_users', $nik);
+        // $this->db->where('nik_users', $nik);
         $this->db->where('status', 1);
         $this->db->where('id_poli', $id_poli);
         $this->db->where('tgl_pendaftaran', $date);

@@ -35,6 +35,7 @@
                     </div>
                     <hr>
                     <p>Sisa Antrian = <?= $sisa ?></p>
+					<!-- <a href="<?= base_url('Users/coba_wa') ?>" class="btn btn-success">coba whatsapp</a> -->
 
                 </div>
             </div>

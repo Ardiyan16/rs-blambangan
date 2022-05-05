@@ -508,9 +508,34 @@ class Users extends CI_Controller
 
     public function konfirmasi()
     {
+		$id_poli = 2;
         $nik = $this->session->userdata('nik');
+        $nama = $this->session->userdata('nama');
         $data['title'] = 'konfirmasi';
         $data['no_antrian'] = $this->m_antrian->get_konfirmasi($nik);
+        $antrian = $this->m_antrian->get_konfirmasi($nik);
+		$sisanya = ($this->m_antrian->sisa_antrian($id_poli) - 1) * 30;
+				$userkey = 'fa5793a42b9a';
+$passkey = 'd3bea3d15985f7ef232a4e9b';
+$telepon = '085156484672';
+$message = 'Sisa Antrian Atas Nama ';
+$url = 'https://console.zenziva.net/wareguler/api/sendWA/';
+$curlHandle = curl_init();
+curl_setopt($curlHandle, CURLOPT_URL, $url);
+curl_setopt($curlHandle, CURLOPT_HEADER, 0);
+curl_setopt($curlHandle, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($curlHandle, CURLOPT_SSL_VERIFYHOST, 2);
+curl_setopt($curlHandle, CURLOPT_SSL_VERIFYPEER, 0);
+curl_setopt($curlHandle, CURLOPT_TIMEOUT,30);
+curl_setopt($curlHandle, CURLOPT_POST, 1);
+curl_setopt($curlHandle, CURLOPT_POSTFIELDS, array(
+    'userkey' => $userkey,
+    'passkey' => $passkey,
+    'to' => $telepon,
+    'message' => $message
+));
+$results = json_decode(curl_exec($curlHandle), true);
+curl_close($curlHandle);
         $this->load->view('users/konfirmasi', $data);
     }
 
@@ -678,8 +703,36 @@ class Users extends CI_Controller
         $data['detail'] = $this->m_antrian->get_detail_riwayat($id);
         $id_poli = $data['detail']->id_poli;
         $data['sisa'] = $this->m_antrian->sisa_antrian($id_poli) - 1;
+        $sisanya = ($this->m_antrian->sisa_antrian($id_poli) - 1) * 30;
+// 		$userkey = 'fa5793a42b9a';
+// $passkey = 'd3bea3d15985f7ef232a4e9b';
+// $telepon = '085156484672';
+// $message = 'Sisa Antrian Anda '.$sisanya.' menit';
+// $url = 'https://console.zenziva.net/wareguler/api/sendWA/';
+// $curlHandle = curl_init();
+// curl_setopt($curlHandle, CURLOPT_URL, $url);
+// curl_setopt($curlHandle, CURLOPT_HEADER, 0);
+// curl_setopt($curlHandle, CURLOPT_RETURNTRANSFER, 1);
+// curl_setopt($curlHandle, CURLOPT_SSL_VERIFYHOST, 2);
+// curl_setopt($curlHandle, CURLOPT_SSL_VERIFYPEER, 0);
+// curl_setopt($curlHandle, CURLOPT_TIMEOUT,30);
+// curl_setopt($curlHandle, CURLOPT_POST, 1);
+// curl_setopt($curlHandle, CURLOPT_POSTFIELDS, array(
+//     'userkey' => $userkey,
+//     'passkey' => $passkey,
+//     'to' => $telepon,
+//     'message' => $message
+// ));
+// $results = json_decode(curl_exec($curlHandle), true);
+// curl_close($curlHandle);
         $this->load->view('users/detail_riwayat', $data);
     }
+
+	public function coba_wa()
+	{
+		
+redirect('Users/riwayat');
+	}
 
     public function pilih_klinik()
     {
