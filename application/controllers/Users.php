@@ -195,6 +195,7 @@ class Users extends CI_Controller
     {
         $data = $this->m_antrian->get_pendaftaran();
         $nik = $this->input->post('nik_users');
+        $datapoli = 2;
         // $tgl = $this->input->post('tgl_pendaftaran');
             if ($data->status == "1") {
                 $this->session->set_flashdata('sudahdaftar', true);
@@ -202,7 +203,7 @@ class Users extends CI_Controller
             } else {
                 $this->m_antrian->save_pendaftaran();
                 $this->session->set_flashdata('insert', true);
-                redirect('Users/konfirmasi');
+                redirect('Users/konfirmasi/'.$datapoli);
             }
     }
 
@@ -495,6 +496,7 @@ class Users extends CI_Controller
     {
         $data = $this->m_antrian->get_pendaftaran();
         $nik = $this->input->post('nik_users');
+       
         // $tgl = $this->input->post('tgl_pendaftaran');
             if ($data->status == "1") {
                 $this->session->set_flashdata('sudahdaftar', true);
@@ -506,19 +508,23 @@ class Users extends CI_Controller
             }
     }
 
-    public function konfirmasi()
+    public function konfirmasi($datapoli)
     {
 		$id_poli = 2;
         $nik = $this->session->userdata('nik');
         $nama = $this->session->userdata('nama');
         $data['title'] = 'konfirmasi';
+        $data['datapoli'] = $datapoli;
         $data['no_antrian'] = $this->m_antrian->get_konfirmasi($nik);
         $antrian = $this->m_antrian->get_konfirmasi($nik);
 		$sisanya = ($this->m_antrian->sisa_antrian($id_poli) - 1) * 30;
+		if($sisanya === 0){
+			$sisanya = 10;
+		}
 				$userkey = 'fa5793a42b9a';
 $passkey = 'd3bea3d15985f7ef232a4e9b';
 $telepon = '085156484672';
-$message = 'Sisa Antrian Atas Nama '.$nama.' dengan nomor antrian '.$antrian->no_antrian.'. Antrian anda akan dilaksanakan kurang lebih '.$sisanya.' menit lagi';
+$message = 'Sisa Antrian Atas Nama '.$nama.' pada poli '.$datapoli.' dengan nomor antrian '.$antrian->no_antrian.'. Antrian anda akan dilaksanakan kurang lebih '.$sisanya.' menit lagi';
 $url = 'https://console.zenziva.net/wareguler/api/sendWA/';
 $curlHandle = curl_init();
 curl_setopt($curlHandle, CURLOPT_URL, $url);
