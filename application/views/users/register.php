@@ -106,6 +106,14 @@
                                     <br>
                                     <div class="input-group justify-content-center">
                                         <div class="form-group">
+                                            <label>No Whatsapp</label>
+                                            <input type="text" class="form-control col-sm-12" name="no_wa">
+                                            <?= form_error('no_wa', '<small class="text-danger pl-3">', '</small>'); ?>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="input-group justify-content-center">
+                                        <div class="form-group">
                                             <label>Password</label>
                                             <input type="password" class="form-control" name="password">
                                             <?= form_error('password', '<small class="text-danger pl-3">', '</small>'); ?>

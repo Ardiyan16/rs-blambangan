@@ -67,6 +67,7 @@
                     <div class="col-sm-6">
                         <div class="card">
                             <div class="card-body">
+                                <h5><?= $this->session->flashdata('success') ?></h5>
                                 <h4 class="card-title text-center" style="margin-bottom: 50px; font-family: poppins; font-weight: bold;">Login - Daftar Online</h4>
                                 <form class="form" action="<?= base_url('Login/login') ?>" method="post">
                                     <div class="input-group justify-content-center">
