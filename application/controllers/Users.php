@@ -180,6 +180,7 @@ class Users extends CI_Controller
     {
         $data = $this->m_antrian->get_pendaftaran();
         $nik = $this->input->post('nik_users');
+        $datapoli = 1;
         // $tgl = $this->input->post('tgl_pendaftaran');
             if ($data->status == "1") {
                 $this->session->set_flashdata('sudahdaftar', true);
@@ -187,7 +188,7 @@ class Users extends CI_Controller
             } else {
                 $this->m_antrian->save_pendaftaran();
                 $this->session->set_flashdata('insert', true);
-                redirect('Users/konfirmasi');
+                redirect('Users/konfirmasi/'.$datapoli);
             }
     }
 
@@ -211,6 +212,7 @@ class Users extends CI_Controller
     {
         $data = $this->m_antrian->get_pendaftaran();
         $nik = $this->input->post('nik_users');
+        $datapoli = 3;
         // $tgl = $this->input->post('tgl_pendaftaran');
             if ($data->status == "1") {
                 $this->session->set_flashdata('sudahdaftar', true);
@@ -218,7 +220,7 @@ class Users extends CI_Controller
             } else {
                 $this->m_antrian->save_pendaftaran();
                 $this->session->set_flashdata('insert', true);
-                redirect('Users/konfirmasi');
+                redirect('Users/konfirmasi/'.$datapoli);
             }
     }
 
@@ -226,6 +228,7 @@ class Users extends CI_Controller
     {
         $data = $this->m_antrian->get_pendaftaran();
         $nik = $this->input->post('nik_users');
+        $datapoli = 4;
         // $tgl = $this->input->post('tgl_pendaftaran');
             if ($data->status == "1") {
                 $this->session->set_flashdata('sudahdaftar', true);
@@ -233,7 +236,7 @@ class Users extends CI_Controller
             } else {
                 $this->m_antrian->save_pendaftaran();
                 $this->session->set_flashdata('insert', true);
-                redirect('Users/konfirmasi');
+                redirect('Users/konfirmasi/'.$datapoli);
             }
     }
 
@@ -241,6 +244,7 @@ class Users extends CI_Controller
     {
         $data = $this->m_antrian->get_pendaftaran();
         $nik = $this->input->post('nik_users');
+        $datapoli = 5;
         // $tgl = $this->input->post('tgl_pendaftaran');
             if ($data->status == "1") {
                 $this->session->set_flashdata('sudahdaftar', true);
@@ -248,7 +252,7 @@ class Users extends CI_Controller
             } else {
                 $this->m_antrian->save_pendaftaran();
                 $this->session->set_flashdata('insert', true);
-                redirect('Users/konfirmasi');
+                redirect('Users/konfirmasi/'.$datapoli);
             }
     }
 
@@ -256,6 +260,7 @@ class Users extends CI_Controller
     {
         $data = $this->m_antrian->get_pendaftaran();
         $nik = $this->input->post('nik_users');
+        $datapoli = 6;
         // $tgl = $this->input->post('tgl_pendaftaran');
             if ($data->status == "1") {
                 $this->session->set_flashdata('sudahdaftar', true);
@@ -263,7 +268,7 @@ class Users extends CI_Controller
             } else {
                 $this->m_antrian->save_pendaftaran();
                 $this->session->set_flashdata('insert', true);
-                redirect('Users/konfirmasi');
+                redirect('Users/konfirmasi/'.$datapoli);
             }
     }
 
@@ -271,6 +276,7 @@ class Users extends CI_Controller
     {
         $data = $this->m_antrian->get_pendaftaran();
         $nik = $this->input->post('nik_users');
+        $datapoli = 7;
         // $tgl = $this->input->post('tgl_pendaftaran');
             if ($data->status == "1") {
                 $this->session->set_flashdata('sudahdaftar', true);
@@ -278,7 +284,7 @@ class Users extends CI_Controller
             } else {
                 $this->m_antrian->save_pendaftaran();
                 $this->session->set_flashdata('insert', true);
-                redirect('Users/konfirmasi');
+                redirect('Users/konfirmasi/'.$datapoli);
             }
     }
 
@@ -286,6 +292,7 @@ class Users extends CI_Controller
     {
         $data = $this->m_antrian->get_pendaftaran();
         $nik = $this->input->post('nik_users');
+        $datapoli = 8;
         // $tgl = $this->input->post('tgl_pendaftaran');
             if ($data->status == "1") {
                 $this->session->set_flashdata('sudahdaftar', true);
@@ -293,7 +300,7 @@ class Users extends CI_Controller
             } else {
                 $this->m_antrian->save_pendaftaran();
                 $this->session->set_flashdata('insert', true);
-                redirect('Users/konfirmasi');
+                redirect('Users/konfirmasi/'.$datapoli);
             }
     }
 
@@ -301,6 +308,7 @@ class Users extends CI_Controller
     {
         $data = $this->m_antrian->get_pendaftaran();
         $nik = $this->input->post('nik_users');
+        $datapoli = 9;
         // $tgl = $this->input->post('tgl_pendaftaran');
             if ($data->status == "1") {
                 $this->session->set_flashdata('sudahdaftar', true);
@@ -308,7 +316,7 @@ class Users extends CI_Controller
             } else {
                 $this->m_antrian->save_pendaftaran();
                 $this->session->set_flashdata('insert', true);
-                redirect('Users/konfirmasi');
+                redirect('Users/konfirmasi/'.$datapoli);
             }
     }
 
@@ -316,6 +324,7 @@ class Users extends CI_Controller
     {
         $data = $this->m_antrian->get_pendaftaran();
         $nik = $this->input->post('nik_users');
+        $datapoli = 10;
         // $tgl = $this->input->post('tgl_pendaftaran');
             if ($data->status == "1") {
                 $this->session->set_flashdata('sudahdaftar', true);
@@ -323,7 +332,7 @@ class Users extends CI_Controller
             } else {
                 $this->m_antrian->save_pendaftaran();
                 $this->session->set_flashdata('insert', true);
-                redirect('Users/konfirmasi');
+                redirect('Users/konfirmasi/'.$datapoli);
             }
     }
 
@@ -331,6 +340,7 @@ class Users extends CI_Controller
     {
         $data = $this->m_antrian->get_pendaftaran();
         $nik = $this->input->post('nik_users');
+        $datapoli = 11;
         // $tgl = $this->input->post('tgl_pendaftaran');
             if ($data->status == "1") {
                 $this->session->set_flashdata('sudahdaftar', true);
@@ -338,7 +348,7 @@ class Users extends CI_Controller
             } else {
                 $this->m_antrian->save_pendaftaran();
                 $this->session->set_flashdata('insert', true);
-                redirect('Users/konfirmasi');
+                redirect('Users/konfirmasi/'.$datapoli);
             }
     }
 
@@ -346,6 +356,7 @@ class Users extends CI_Controller
     {
         $data = $this->m_antrian->get_pendaftaran();
         $nik = $this->input->post('nik_users');
+        $datapoli = 12;
         // $tgl = $this->input->post('tgl_pendaftaran');
             if ($data->status == "1") {
                 $this->session->set_flashdata('sudahdaftar', true);
@@ -353,7 +364,7 @@ class Users extends CI_Controller
             } else {
                 $this->m_antrian->save_pendaftaran();
                 $this->session->set_flashdata('insert', true);
-                redirect('Users/konfirmasi');
+                redirect('Users/konfirmasi/'.$datapoli);
             }
     }
 
@@ -361,6 +372,7 @@ class Users extends CI_Controller
     {
         $data = $this->m_antrian->get_pendaftaran();
         $nik = $this->input->post('nik_users');
+        $datapoli = 13;
         // $tgl = $this->input->post('tgl_pendaftaran');
             if ($data->status == "1") {
                 $this->session->set_flashdata('sudahdaftar', true);
@@ -368,7 +380,7 @@ class Users extends CI_Controller
             } else {
                 $this->m_antrian->save_pendaftaran();
                 $this->session->set_flashdata('insert', true);
-                redirect('Users/konfirmasi');
+                redirect('Users/konfirmasi/'.$datapoli);
             }
     }
 
@@ -376,6 +388,7 @@ class Users extends CI_Controller
     {
         $data = $this->m_antrian->get_pendaftaran();
         $nik = $this->input->post('nik_users');
+        $datapoli = 14;
         // $tgl = $this->input->post('tgl_pendaftaran');
             if ($data->status == "1") {
                 $this->session->set_flashdata('sudahdaftar', true);
@@ -383,7 +396,7 @@ class Users extends CI_Controller
             } else {
                 $this->m_antrian->save_pendaftaran();
                 $this->session->set_flashdata('insert', true);
-                redirect('Users/konfirmasi');
+                redirect('Users/konfirmasi/'.$datapoli);
             }
     }
 
@@ -391,6 +404,7 @@ class Users extends CI_Controller
     {
         $data = $this->m_antrian->get_pendaftaran();
         $nik = $this->input->post('nik_users');
+        $datapoli = 15;
         // $tgl = $this->input->post('tgl_pendaftaran');
             if ($data->status == "1") {
                 $this->session->set_flashdata('sudahdaftar', true);
@@ -398,7 +412,7 @@ class Users extends CI_Controller
             } else {
                 $this->m_antrian->save_pendaftaran();
                 $this->session->set_flashdata('insert', true);
-                redirect('Users/konfirmasi');
+                redirect('Users/konfirmasi/'.$datapoli);
             }
     }
 
@@ -406,6 +420,7 @@ class Users extends CI_Controller
     {
         $data = $this->m_antrian->get_pendaftaran();
         $nik = $this->input->post('nik_users');
+        $datapoli = 16;
         // $tgl = $this->input->post('tgl_pendaftaran');
             if ($data->status == "1") {
                 $this->session->set_flashdata('sudahdaftar', true);
@@ -413,7 +428,7 @@ class Users extends CI_Controller
             } else {
                 $this->m_antrian->save_pendaftaran();
                 $this->session->set_flashdata('insert', true);
-                redirect('Users/konfirmasi');
+                redirect('Users/konfirmasi/'.$datapoli);
             }
     }
 
@@ -421,6 +436,7 @@ class Users extends CI_Controller
     {
         $data = $this->m_antrian->get_pendaftaran();
         $nik = $this->input->post('nik_users');
+        $datapoli = 17;
         // $tgl = $this->input->post('tgl_pendaftaran');
             if ($data->status == "1") {
                 $this->session->set_flashdata('sudahdaftar', true);
@@ -428,7 +444,7 @@ class Users extends CI_Controller
             } else {
                 $this->m_antrian->save_pendaftaran();
                 $this->session->set_flashdata('insert', true);
-                redirect('Users/konfirmasi');
+                redirect('Users/konfirmasi/'.$datapoli);
             }
     }
 
@@ -436,6 +452,7 @@ class Users extends CI_Controller
     {
         $data = $this->m_antrian->get_pendaftaran();
         $nik = $this->input->post('nik_users');
+        $datapoli = 18;
         // $tgl = $this->input->post('tgl_pendaftaran');
             if ($data->status == "1") {
                 $this->session->set_flashdata('sudahdaftar', true);
@@ -443,7 +460,7 @@ class Users extends CI_Controller
             } else {
                 $this->m_antrian->save_pendaftaran();
                 $this->session->set_flashdata('insert', true);
-                redirect('Users/konfirmasi');
+                redirect('Users/konfirmasi/'.$datapoli);
             }
     }
 
@@ -451,6 +468,7 @@ class Users extends CI_Controller
     {
         $data = $this->m_antrian->get_pendaftaran();
         $nik = $this->input->post('nik_users');
+        $datapoli = 19;
         // $tgl = $this->input->post('tgl_pendaftaran');
             if ($data->status == "1") {
                 $this->session->set_flashdata('sudahdaftar', true);
@@ -458,7 +476,7 @@ class Users extends CI_Controller
             } else {
                 $this->m_antrian->save_pendaftaran();
                 $this->session->set_flashdata('insert', true);
-                redirect('Users/konfirmasi');
+                redirect('Users/konfirmasi/'.$datapoli);
             }
     }
 
@@ -466,6 +484,7 @@ class Users extends CI_Controller
     {
         $data = $this->m_antrian->get_pendaftaran();
         $nik = $this->input->post('nik_users');
+        $datapoli = 20;
         // $tgl = $this->input->post('tgl_pendaftaran');
             if ($data->status == "1") {
                 $this->session->set_flashdata('sudahdaftar', true);
@@ -473,7 +492,7 @@ class Users extends CI_Controller
             } else {
                 $this->m_antrian->save_pendaftaran();
                 $this->session->set_flashdata('insert', true);
-                redirect('Users/konfirmasi');
+                redirect('Users/konfirmasi/'.$datapoli);
             }
     }
 
@@ -481,6 +500,7 @@ class Users extends CI_Controller
     {
         $data = $this->m_antrian->get_pendaftaran();
         $nik = $this->input->post('nik_users');
+        $datapoli = 21;
         // $tgl = $this->input->post('tgl_pendaftaran');
             if ($data->status == "1") {
                 $this->session->set_flashdata('sudahdaftar', true);
@@ -488,7 +508,7 @@ class Users extends CI_Controller
             } else {
                 $this->m_antrian->save_pendaftaran();
                 $this->session->set_flashdata('insert', true);
-                redirect('Users/konfirmasi');
+                redirect('Users/konfirmasi/'.$datapoli);
             }
     }
 
@@ -496,6 +516,7 @@ class Users extends CI_Controller
     {
         $data = $this->m_antrian->get_pendaftaran();
         $nik = $this->input->post('nik_users');
+        $datapoli = 22;
        
         // $tgl = $this->input->post('tgl_pendaftaran');
             if ($data->status == "1") {
@@ -504,27 +525,28 @@ class Users extends CI_Controller
             } else {
                 $this->m_antrian->save_pendaftaran();
                 $this->session->set_flashdata('insert', true);
-                redirect('Users/konfirmasi');
+                redirect('Users/konfirmasi/'.$datapoli);
             }
     }
 
     public function konfirmasi($datapoli)
     {
-		$id_poli = 2;
+		// $id_poli = 2;
         $nik = $this->session->userdata('nik');
         $nama = $this->session->userdata('nama');
         $data['title'] = 'konfirmasi';
         $data['datapoli'] = $datapoli;
         $data['no_antrian'] = $this->m_antrian->get_konfirmasi($nik);
+		$namapoli = $this->db->query("SELECT * FROM poli WHERE id='$datapoli'")->row();
         $antrian = $this->m_antrian->get_konfirmasi($nik);
-		$sisanya = ($this->m_antrian->sisa_antrian($id_poli) - 1) * 30;
+		$sisanya = ($this->m_antrian->sisa_antrian($datapoli) - 1) * 30;
 		if($sisanya === 0){
 			$sisanya = 10;
 		}
 				$userkey = 'fa5793a42b9a';
 $passkey = 'd3bea3d15985f7ef232a4e9b';
-$telepon = '085156484672';
-$message = 'Sisa Antrian Atas Nama '.$nama.' pada poli '.$datapoli.' dengan nomor antrian '.$antrian->no_antrian.'. Antrian anda akan dilaksanakan kurang lebih '.$sisanya.' menit lagi';
+$telepon = $this->session->userdata('no_wa');
+$message = 'Sisa Antrian Atas Nama '.$nama.' pada '.$namapoli->poli.' dengan nomor antrian '.$antrian->no_antrian.'. Antrian anda akan dilaksanakan kurang lebih '.$sisanya.' menit lagi';
 $url = 'https://console.zenziva.net/wareguler/api/sendWA/';
 $curlHandle = curl_init();
 curl_setopt($curlHandle, CURLOPT_URL, $url);

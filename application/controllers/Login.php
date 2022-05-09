@@ -76,7 +76,7 @@ class Login extends CI_Controller
     $this->form_validation->set_rules('nik', 'NIK', 'required|trim', ['required' => 'nik tidak boleh kosong']);
     $this->form_validation->set_rules('password', 'Password', 'required|trim', ['required' => 'password tidak boleh kosong']);
     if ($this->form_validation->run() == FALSE) {
-      $this->load->view('users/login');
+      $this->load->view('users/login'); 
     } else {
       $this->proses_login();
     }
@@ -89,13 +89,14 @@ class Login extends CI_Controller
 
     $user = $this->db->get_where('users', ['nik' => $nik])->row_array();
     $cekpass = $this->db->get_where('users', array('password' => $password));
-
+ 
     if ($nik == $user['nik']) {
       if (password_verify($password, $user['password'])) {
         $data = [
           'nik' => $user['nik'],
           'no_rm' => $user['no_rm'],
           'tgl_lahir' => $user['tgl_lahir'],
+          'no_wa' => $user['no_wa'],
           'nama' => $user['nama'],
         ];
         $this->session->set_userdata($data);

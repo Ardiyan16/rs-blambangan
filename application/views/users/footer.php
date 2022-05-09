@@ -42,7 +42,7 @@
 
      <div class="container">
          <div class="copyright">
-             <strong><span>RSUD DR. SAIFUL ANWAR MALANG</span></strong>
+             <strong><span>RSUD Blambangan Banyuwangi</span></strong>
          </div>
          <div class="credits">
              <!-- All the links in the footer should remain intact. -->

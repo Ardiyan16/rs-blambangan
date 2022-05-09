@@ -24,9 +24,9 @@
                     <div class="content">
                         <h3>Selamat Datang Pasien</h3>
                         <p>
-                            Rumah Sakit Umum Daerah Dr. Saiful Anwar Malang (RSSA) telah menginjak usia yang ke-41 tahun pada tahun 2020. Selama jangka waktu tersebut, tentu tidak sedikit prestasi yang telah dicapai. Awal berdirinya RSSA hanyalah rumah sakit militer milik KNIL (Koninklijke Nederlandsch-Indische Leger), dan sekarang menjadi Rumah Sakit Pendidikan Utama Tipe A milik Pemerintah Provinsi Jawa Timur.
+                            Rumah Sakit Umum Daerah Blambangan Banyuwangi sekarang berkembang menjadi Rumah Sakit Kelas B Pemerintah dan lulus Akreditasi PARIPURNA KARS 2012. 
                         </p>
-                        <a href="#" class="about-btn">Tentang Kami <i class="bx bx-chevron-right"></i></a>
+                        <a href="<?= base_url('Users/pilih_klinik') ?>" class="about-btn">Pendaftaran Pasien Online <i class="bx bx-chevron-right"></i></a>
                     </div>
                 </div>
                 <div class="col-xl-7 d-flex align-items-stretch">

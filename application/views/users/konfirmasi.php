@@ -33,6 +33,7 @@
                         <p>Nomor Antrian Anda</p>
                         <h1 style="font-size: 150px;"><?= $no_antrian->no_antrian ?></h1>
 						<p><?= $datapoli ?></p>
+						<!-- <p><?= $namapoli->poli ?></p> -->
                     </div>
                     <hr>
 
