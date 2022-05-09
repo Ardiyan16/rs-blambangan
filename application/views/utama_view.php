@@ -403,7 +403,7 @@
             <div class="info-box mb-4">
               <i class="bx bx-map"></i>
               <h3>Alamat</h3>
-              <p>Jl. Jaksa Agung Suprapto No. 2 - Banyuwango, Jawa Timur</p>
+              <p>Jl. Jaksa Agung Suprapto No. 2 - Banyuwangi, Jawa Timur</p>
               <p>Kode Pos : 65111</p>
             </div>
           </div>
@@ -412,7 +412,7 @@
             <div class="info-box mb-4">
               <i class="bx bx-envelope"></i>
               <h3>Email</h3>
-              <p>staf-rsu-drsaifulanwar@jatimprov.go.id</p>
+              <p>rsudblambangan@jatimprov.go.id</p>
               <br>
             </div>
           </div>
@@ -431,7 +431,7 @@
         <div class="row">
 
           <div class="col-lg-6 ">
-            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19560.06829231791!2d112.63018016458119!3d-7.974962024359986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6283b265dc00d%3A0x65690e1bdea8e9e4!2sRSUD%20Saiful%20Anwar!5e0!3m2!1sen!2sid!4v1620596523494!5m2!1sen!2sid" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.944211661212!2d114.36380401523583!3d-8.208365394092711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd1453bb065f8e7%3A0xad5ff16b895a4de6!2sRSUD%20Blambangan!5e0!3m2!1sid!2sid!4v1652070478541!5m2!1sid!2sid" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
           </div>
 
           <div class="col-lg-6">
@@ -478,7 +478,7 @@
               <p class="pb-3">(Complain Centre lt. 1)</p>
               <p><br>SMS PENGADUAN : 081555606668<br>
                 <br>
-                <strong>Email :</strong> ppid.rssa@gmail.com<br>
+                <strong>Email :</strong> rsudblambangan@gmail.com<br>
                 <strong>No. Telp :</strong> 0341 362101 ext 1100<br>
               </p>
               <div class="social-links mt-3">
@@ -510,7 +510,7 @@
 
     <div class="container">
       <div class="copyright">
-        <strong><span>RSUD Blambangan Banyuwango</span></strong>
+        <strong><span>RSUD Blambangan Banyuwangi</span></strong>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->

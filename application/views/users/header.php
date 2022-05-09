@@ -47,7 +47,7 @@
         <div class="container d-flex align-items-center justify-content-between">
 
             <div class="logo-rssa">
-                <a href="index.html">
+                <a href="<?= base_url() ?>">
                     <img src="<?= base_url() ?>assets/img/logo2.png" alt="" class="img-fluid" style="width:100px;height:100px;"></a>
                 <!-- Uncomment below if you prefer to use an image logo -->
                 <!-- <a href="index.html"><img src="<?= base_url() ?>assets/img/logo.png" alt="" class="img-fluid"></a>-->
