@@ -69,7 +69,7 @@
                             <div class="card-body">
                                 <h4 class="card-title text-center" style="margin-bottom: 50px; font-family: poppins; font-weight: bold;">Register</h4>
                                 <form class="form" action="<?= base_url('Login/registrasi') ?>" method="post">
-                                    <div class="input-group">
+                                    <div class="input-group justify-content-center">
                                         <div class="form-group">
                                             <label>NIK</label>
                                             <input type="text" class="form-control col-sm-12" name="nik">
@@ -77,7 +77,7 @@
                                         </div>
                                     </div>
                                     <br>
-                                    <div class="input-group">
+                                    <div class="input-group justify-content-center">
                                         <div class="form-group">
                                             <label>Nama Lengkap</label>
                                             <input type="text" class="form-control col-sm-12" name="nama">
@@ -85,7 +85,7 @@
                                         </div>
                                     </div>
                                     <br>
-                                    <div class="input-group">
+                                    <div class="input-group justify-content-center">
                                         <div class="form-group">
                                             <label>Tanggal Lahir</label>
                                             <input type="date" class="form-control col-sm-12" name="tgl_lahir">
@@ -93,7 +93,7 @@
                                         </div>
                                     </div>
                                     <br>
-                                    <div class="input-group">
+                                    <div class="input-group justify-content-center">
                                         <div class="form-group">
                                             <label>Jenis Kelamin</label>
                                             <br>
@@ -104,7 +104,7 @@
                                         </div>
                                     </div>
                                     <br>
-                                    <div class="input-group">
+                                    <div class="input-group justify-content-center">
                                         <div class="form-group">
                                             <label>Password</label>
                                             <input type="password" class="form-control" name="password">

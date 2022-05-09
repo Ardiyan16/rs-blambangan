@@ -69,7 +69,7 @@
                             <div class="card-body">
                                 <h4 class="card-title text-center" style="margin-bottom: 50px; font-family: poppins; font-weight: bold;">Login - Daftar Online</h4>
                                 <form class="form" action="<?= base_url('Login/login') ?>" method="post">
-                                    <div class="input-group">
+                                    <div class="input-group justify-content-center">
                                         <div class="form-group">
                                             <label>NIK</label>
                                             <input type="text" class="form-control col-sm-12" name="nik">
@@ -77,7 +77,7 @@
                                         </div>
                                     </div>
                                     <br>
-                                    <div class="input-group">
+                                    <div class="input-group justify-content-center">
                                         <div class="form-group">
                                             <label>Password</label>
                                             <input type="password" class="form-control" name="password">
@@ -88,7 +88,7 @@
                                     <br>
                                     <button type="submit" class="btn btn-primary" style="margin-left: 45%;">Login</button>
                                     <br>
-                                    <a href="<?= base_url('Login/registrasi_user') ?>" style="margin-left: 20%;">Anda belum memiliki akun ?</a>
+                                    <a class="justify-content-center" href="<?= base_url('Login/registrasi_user') ?>" style="margin-left: 20%;">Anda belum memiliki akun ?</a>
                                 </form>
                             </div>
                         </div>
