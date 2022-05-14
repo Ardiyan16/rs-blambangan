@@ -204,7 +204,7 @@ class antrian_model extends CI_Model
 
     public function get_detail_riwayat($id)
     {
-        $this->db->select('*');
+        $this->db->select('pendaftaran.*, users.nama, users.no_rm, users.tgl_lahir, poli.poli');
         $this->db->from('pendaftaran');
         $this->db->join('users', 'pendaftaran.nik_users = users.nik');
         $this->db->join('poli', 'pendaftaran.id_poli = poli.id');

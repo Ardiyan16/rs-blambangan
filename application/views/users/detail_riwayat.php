@@ -40,7 +40,7 @@
                                                             date_default_timezone_set('Asia/Jakarta');
                                                             echo date("H:i", strtotime("$sisanya minutes", $time_sekarang));
                                                             ?></p>
-                    <p>Sisa Antrian <?= $sisa ?></p>
+                    <p>Sisa Antrian = <?= $sisa ?></p>
                     <!-- <a href="<?= base_url('Users/coba_wa') ?>" class="btn btn-success">coba whatsapp</a> -->
 
                 </div>

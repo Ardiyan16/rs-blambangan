@@ -736,9 +736,16 @@ class Users extends CI_Controller
         $data['title'] = 'Riwayat';
         $data['detail'] = $this->m_antrian->get_detail_riwayat($id);
         $id_poli = $data['detail']->id_poli;
+        // var_dump($data['detail']->status);
+
         $no_antri = $this->m_antrian->no_antrian();
-        $data['sisa'] = $no_antri->no_antrian - $this->m_antrian->sisa_antrian2($id_poli) - 1;
-        $sisanya = ($no_antri->no_antrian - $this->m_antrian->sisa_antrian2($id_poli) - 1) * 30;
+        if ($data['detail']->status == 1) {
+            $data['sisa'] = $no_antri->no_antrian - $this->m_antrian->sisa_antrian2($id_poli) - 1;
+            $sisanya = ($no_antri->no_antrian - $this->m_antrian->sisa_antrian2($id_poli) - 1) * 30;
+        } else {
+            $data['sisa'] = 'anda selesai berobat';
+            $sisanya = 'telah selesai';
+        }
         $data['namapoli'] = $this->db->get_where('poli', ['id' => $id_poli])->row();
         date_default_timezone_set('Asia/Jakarta');
         $data['waktu'] = strtotime(date("h:i"));
