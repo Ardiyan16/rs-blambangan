@@ -34,8 +34,14 @@
                         <h1 style="font-size: 150px;"><?= $detail->no_antrian ?></h1>
                     </div>
                     <hr>
-                    <p>Sisa Antrian = <?= $sisa ?></p>
-					<!-- <a href="<?= base_url('Users/coba_wa') ?>" class="btn btn-success">coba whatsapp</a> -->
+                    <p><?= $namapoli->poli ?></p>
+                    <p>pengobatan anda diperkirakan pukul <?php
+                                                            $time_sekarang = time();
+                                                            date_default_timezone_set('Asia/Jakarta');
+                                                            echo date("H:i", strtotime("$sisanya minutes", $time_sekarang));
+                                                            ?></p>
+                    <p>Sisa Antrian <?= $sisa ?></p>
+                    <!-- <a href="<?= base_url('Users/coba_wa') ?>" class="btn btn-success">coba whatsapp</a> -->
 
                 </div>
             </div>

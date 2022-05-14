@@ -215,9 +215,31 @@ class antrian_model extends CI_Model
     public function sisa_antrian($id_poli)
     {
         $date = date('Y-m-d');
-        $nik = $this->session->userdata('nik');
+        // $nik = $this->session->userdata('nik');
         // $this->db->where('nik_users', $nik);
         $this->db->where('status', 1);
+        $this->db->where('id_poli', $id_poli);
+        $this->db->where('tgl_pendaftaran', $date);
+        return $this->db->count_all_results('pendaftaran');
+    }
+
+    public function no_antrian()
+    {
+        $date = date('Y-m-d');
+        $nik = $this->session->userdata('nik');
+        $this->db->select('no_antrian');
+        $this->db->where('nik_users', $nik);
+        $this->db->where('tgl_pendaftaran', $date);
+        $this->db->where('status', 1);
+        return $this->db->get('pendaftaran')->row();
+    }
+
+    public function sisa_antrian2($id_poli)
+    {
+        $date = date('Y-m-d');
+        // $nik = $this->session->userdata('nik');
+        // $this->db->where('nik_users', $nik);
+        $this->db->where('status', 2);
         $this->db->where('id_poli', $id_poli);
         $this->db->where('tgl_pendaftaran', $date);
         return $this->db->count_all_results('pendaftaran');

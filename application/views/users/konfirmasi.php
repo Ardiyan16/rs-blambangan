@@ -32,8 +32,12 @@
                     <div class="card-footer">
                         <p>Nomor Antrian Anda</p>
                         <h1 style="font-size: 150px;"><?= $no_antrian->no_antrian ?></h1>
-						<p><?= $datapoli ?></p>
-						<!-- <p><?= $namapoli->poli ?></p> -->
+                        <p><?= $namapoli->poli ?></p>
+                        <p>pengobatan anda diperkirakan pukul <?php
+                                                                $time_sekarang = time();
+                                                                echo date("H:i", strtotime("$sisanya minutes", $time_sekarang));
+                                                                ?></p>
+                        <!-- <p><?= $sisanya ?></p> -->
                     </div>
                     <hr>
 
