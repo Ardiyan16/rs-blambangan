@@ -101,6 +101,7 @@ class Login extends CI_Controller
           'tgl_lahir' => $user['tgl_lahir'],
           'no_wa' => $user['no_wa'],
           'nama' => $user['nama'],
+          'status' => $user['status']
         ];
         $this->session->set_userdata($data);
         if ($user['status'] == '1') {
@@ -111,6 +112,7 @@ class Login extends CI_Controller
           $this->session->unset_userdata('no_wa');
           $this->session->unset_userdata('alamat');
           $this->session->unset_userdata('tgl_lahir');
+          $this->session->unset_userdata('status');
           $this->session->set_flashdata('belumkonfirmasi', true);
           redirect('login/login_user');
         }
@@ -131,6 +133,7 @@ class Login extends CI_Controller
     $this->session->unset_userdata('tgl_lahir');
     $this->session->unset_userdata('nik');
     $this->session->unset_userdata('no_wa');
+    $this->session->unset_userdata('status');
     redirect('Utama');
   }
 }
