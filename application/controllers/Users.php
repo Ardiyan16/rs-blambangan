@@ -543,13 +543,15 @@ class Users extends CI_Controller
         $data['title'] = 'konfirmasi';
         $data['datapoli'] = $datapoli;
         $data['no_antrian'] = $this->m_antrian->get_konfirmasi($nik);
+        $no_antrian = $this->m_antrian->get_konfirmasi($nik);
         $data['namapoli'] = $this->db->get_where('poli', ['id' => $datapoli])->row();
         $namapoli = $this->db->get_where('poli', ['id' => $datapoli])->row();
+        $no_antrian2 = $this->db->query("SELECT * FROM pendaftaran WHERE nik_users='$nik' ORDER BY nik_users DESC")->row();
         $antrian = $this->m_antrian->get_konfirmasi($nik);
         $no_antri = $this->m_antrian->no_antrian();
         $data['sisa'] = $no_antri->no_antrian - $this->m_antrian->sisa_antrian2($datapoli) - 1;
         $sisanya = ($no_antri->no_antrian - $this->m_antrian->sisa_antrian2($datapoli) - 1) * 30;
-		$time_sekarang = time();
+		$time_sekarang = $no_antrian->jam;
         date_default_timezone_set('Asia/Jakarta');
         $data['waktu'] = strtotime(date("h:i"));
         $data['sisanya'] = $sisanya;
@@ -560,7 +562,7 @@ class Users extends CI_Controller
         $userkey = 'fa5793a42b9a';
         $passkey = 'd3bea3d15985f7ef232a4e9b';
         $telepon = $this->session->userdata('no_wa');
-        $message = 'Sisa Antrian Atas Nama ' . $nama . ' pada ' . $namapoli->poli . ' dengan nomor antrian ' . $antrian->no_antrian . '. Antrian anda akan dilaksanakan kurang lebih ' . $hasil . ' menit lagi';
+        $message = 'Atas Nama ' . $nama . ' dengan nomor antrian ' . $antrian->no_antrian . ' akan dilakukan pemeriksaan di poli ' . $namapoli->poli . ' rs blambangan pada tanggal ' . $no_antrian2->tgl_pendaftaran . ' dengan perkiraan waktu pemeriksaan pukul ' . $hasil . '. Mohon untuk datang tepat waktu';
         $url = 'https://console.zenziva.net/wareguler/api/sendWA/';
         $curlHandle = curl_init();
         curl_setopt($curlHandle, CURLOPT_URL, $url);
