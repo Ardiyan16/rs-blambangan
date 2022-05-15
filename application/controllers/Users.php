@@ -797,7 +797,7 @@ class Users extends CI_Controller
     public function coba()
     {
         date_default_timezone_set('Asia/Jakarta');
-        $data = date("h:i");
+        $data = date('H:i:s');
         var_dump($data);
     }
 }

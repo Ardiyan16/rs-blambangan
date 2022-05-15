@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 02 Bulan Mei 2022 pada 10.01
+-- Waktu pembuatan: 15 Bulan Mei 2022 pada 09.50
 -- Versi server: 10.4.24-MariaDB
 -- Versi PHP: 7.4.28
 
@@ -74,6 +74,7 @@ CREATE TABLE `pendaftaran` (
   `id_poli` int(11) DEFAULT NULL,
   `tgl_pendaftaran` date DEFAULT NULL,
   `no_antrian` varchar(5) DEFAULT NULL,
+  `jam` varchar(50) NOT NULL,
   `status` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -81,8 +82,22 @@ CREATE TABLE `pendaftaran` (
 -- Dumping data untuk tabel `pendaftaran`
 --
 
-INSERT INTO `pendaftaran` (`id`, `nik_users`, `id_poli`, `tgl_pendaftaran`, `no_antrian`, `status`) VALUES
-(12, '3501999789000012', 1, '2022-05-01', '1', 2);
+INSERT INTO `pendaftaran` (`id`, `nik_users`, `id_poli`, `tgl_pendaftaran`, `no_antrian`, `jam`, `status`) VALUES
+(39, '3501999789000012', 1, '2022-05-04', '1', '00:00:00', 2),
+(40, '3501999789000012', 1, '2022-05-04', '2', '00:00:00', 2),
+(42, '3501999789000012', 1, '2022-05-04', '3', '00:00:00', 2),
+(43, '3501999789000010', 1, '2022-05-05', '1', '00:00:00', 2),
+(44, '3501999789000020', 1, '2022-05-09', '1', '00:00:00', 2),
+(45, '3501999789000012', 1, '2022-05-13', '1', '00:00:00', 2),
+(46, '3501999789000012', 2, '2022-05-14', '1', '00:00:00', 2),
+(47, '3501999789000010', 2, '2022-05-14', '2', '00:00:00', 2),
+(48, '3501999789000020', 2, '2022-05-14', '3', '00:00:00', 2),
+(49, '3501999789000012', 2, '2022-05-14', '4', '00:00:00', 2),
+(50, '3501999789000010', 2, '2022-05-15', '1', '00:00:00', 2),
+(51, '3501999789000020', 1, '2022-05-15', '1', '00:00:00', 2),
+(52, '3501999789000012', 1, '2022-05-15', '2', '00:00:00', 2),
+(58, '3501999789000010', 1, '2022-05-15', '3', '1652600827', 1),
+(59, '3501999789000012', 1, '2022-05-15', '4', '1652600972', 1);
 
 -- --------------------------------------------------------
 
@@ -92,7 +107,7 @@ INSERT INTO `pendaftaran` (`id`, `nik_users`, `id_poli`, `tgl_pendaftaran`, `no_
 
 CREATE TABLE `poli` (
   `id` int(11) NOT NULL,
-  `poli` varchar(50) DEFAULT NULL
+  `poli` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -100,10 +115,28 @@ CREATE TABLE `poli` (
 --
 
 INSERT INTO `poli` (`id`, `poli`) VALUES
-(1, 'poli umum'),
-(2, 'poli gigi'),
-(3, 'poli anak'),
-(4, 'poli mata');
+(1, 'klinik anak'),
+(2, 'klinik anesthesi'),
+(3, 'klinik bedah ortopedhi'),
+(4, 'klinik bedah umum'),
+(5, 'klinik bedah syaraf'),
+(6, 'klinik FNAB'),
+(7, 'Klinik Gigi & Mulut'),
+(8, 'Klinik Gizi'),
+(9, 'klinik jantung'),
+(10, 'klinik jiwa'),
+(11, 'klinik kulit & kelamin'),
+(12, 'klinik mata'),
+(13, 'klinik obgyn'),
+(14, 'klinik paru'),
+(15, 'klinik penyakit dalam'),
+(16, 'klinik psikologi'),
+(17, 'klinik rehab medik'),
+(18, 'klinik spesialis gigi dan mulut'),
+(19, 'klinik syaraf'),
+(20, 'klinik THT'),
+(21, 'klinik urologi'),
+(22, 'klinik VCT');
 
 -- --------------------------------------------------------
 
@@ -147,6 +180,7 @@ CREATE TABLE `users` (
   `nama` varchar(50) DEFAULT NULL,
   `tgl_lahir` date DEFAULT NULL,
   `jenis_kelamin` varchar(11) DEFAULT NULL,
+  `no_wa` varchar(13) NOT NULL,
   `password` varchar(255) DEFAULT NULL,
   `status` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -155,8 +189,10 @@ CREATE TABLE `users` (
 -- Dumping data untuk tabel `users`
 --
 
-INSERT INTO `users` (`nik`, `no_rm`, `nama`, `tgl_lahir`, `jenis_kelamin`, `password`, `status`) VALUES
-('3501999789000012', '24042022257', 'Rachel', '1999-09-08', 'perempuan', '$2y$10$ETC96v/HedqK02qfNUqn6ONDaugSEi4wUHFwW/h4Ujh016lptF50y', 1);
+INSERT INTO `users` (`nik`, `no_rm`, `nama`, `tgl_lahir`, `jenis_kelamin`, `no_wa`, `password`, `status`) VALUES
+('3501999789000010', '24042022288', 'Fahrizal Azi Ferdiansyah', '1999-03-21', 'laki-laki', '', '$2y$10$C2j8EMfFlWkCDpnfBRYlUOpLsDmfjB0QdJ709vuPDoR61eLYj0g7C', 1),
+('3501999789000012', '24042022257', 'Rachel', '1999-09-08', 'perempuan', '', '$2y$10$ETC96v/HedqK02qfNUqn6ONDaugSEi4wUHFwW/h4Ujh016lptF50y', 1),
+('3501999789000020', '24042022258', 'Bawik Ardiyan', '1999-09-08', 'laki-laki', '082132881252', '$2y$10$CUieefHs4CQqF1VLC9UG0OU2SJswngNKF5VfVpdVdTfwQVI4sHyje', 1);
 
 --
 -- Indexes for dumped tables
@@ -224,13 +260,13 @@ ALTER TABLE `kategori`
 -- AUTO_INCREMENT untuk tabel `pendaftaran`
 --
 ALTER TABLE `pendaftaran`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 
 --
 -- AUTO_INCREMENT untuk tabel `poli`
 --
 ALTER TABLE `poli`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT untuk tabel `tag`

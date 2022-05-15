@@ -36,9 +36,9 @@
                     <hr>
                     <p><?= $namapoli->poli ?></p>
                     <p>pengobatan anda diperkirakan pukul <?php
-                                                            $time_sekarang = time();
-                                                            date_default_timezone_set('Asia/Jakarta');
-                                                            echo date("H:i", strtotime("$sisanya minutes", $time_sekarang));
+                                                            // $time_sekarang = time();
+                                                            // date_default_timezone_set('Asia/Jakarta');
+                                                            echo date("H:i",strtotime("$sisanya minutes", $detail->jam));
                                                             ?></p>
                     <p>Sisa Antrian = <?= $sisa ?></p>
                     <!-- <a href="<?= base_url('Users/coba_wa') ?>" class="btn btn-success">coba whatsapp</a> -->

@@ -179,6 +179,8 @@ class antrian_model extends CI_Model
         $this->id_poli = $post['id_poli'];
         $this->tgl_pendaftaran = $post['tgl_pendaftaran'];
         $this->no_antrian = $post['no_antrian'];
+        date_default_timezone_set('Asia/Jakarta');
+        $this->jam = time();
         $this->status = 1;
         $this->db->insert($this->table, $this);
     }
@@ -186,7 +188,7 @@ class antrian_model extends CI_Model
     public function get_konfirmasi($nik)
     {
         $this->db->from('pendaftaran');
-        $this->db->select('no_antrian');
+        $this->db->select('no_antrian, jam');
         $this->db->where('nik_users', $nik);
         $this->db->order_by('id', 'desc');
         return $this->db->get()->row();

@@ -34,8 +34,8 @@
                         <h1 style="font-size: 150px;"><?= $no_antrian->no_antrian ?></h1>
                         <p><?= $namapoli->poli ?></p>
                         <p>pengobatan anda diperkirakan pukul <?php
-                                                                $time_sekarang = time();
-                                                                echo date("H:i", strtotime("$sisanya minutes", $time_sekarang));
+                                                                // $waktu = time();
+                                                                echo date("H:i", strtotime("$sisanya minutes", $no_antrian->jam));
                                                                 ?></p>
                         <!-- <p><?= $sisanya ?></p> -->
                     </div>
