@@ -12,47 +12,43 @@
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+	<section id="services" class="services">
       <div class="container">
 
-	  <div class="row">
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>Instalasi Rawat Inap</h2>
+        </div>
 
-<div class="col-lg-12 entries">
-<?php foreach($detail as $row) { ?>
-	<article class="entry entry-single" data-aos="fade-up">
-
-		<h2 class="entry-title">
-		  <a href="blog-single.html"><?= $row->judul ?></a>
-		</h2>
-<div class="entry-img">
-  <center><img src="<?= base_url('assets/img/'.$row->gambar) ?>" alt="" class="img-fluid"></center>
-</div>
-
-
-<div class="entry-meta">
-  <ul>
-	<li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="blog-single.html"><?= $row->penulis ?>,  <?= $row->tanggal ?></a></li>
-  </ul>
-</div>
-
-<div class="entry-content">
-  <p>
-	<?= $row->isi ?>
-  </p>
-</div>
-
-
-
-</article><!-- End blog entry -->
-<?php } ?>
-</div><!-- End blog entries list -->
-
-
-
-</div>
+        <div class="row" >
+		<div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
+                  <h4>A. Sritanjung (VIP Room dan Kelas 1)</h4>
+                  <p>RSUD Blambangan memiliki Ruang Perawatan VIP yang nyaman, tenang dan mengutamakan privasi, diharapkan dapat semakin mendukung proses pemulihan kesehatan pasien.</p>
+        </div>
+		<div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
+                  <h4>B. Tawang Alun (Interna)</h4>
+                  <p>RSUD Blambangan memiliki Ruang Perwatan Interna yang yang menangani diagnosis dan penanganan organ dalam tanpa bedah pada pasien dewasa.</p>
+        </div>
+		<div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
+                  <h4>C. Agung Wilis (Surgery)</h4>
+                  <p>RSUD Blambangan memiliki Ruang Perawatan Bedah yang disediakan khusus untuk merawat pasien pra-operasi hingga pasca-operasi agar pasien bisa pulih sepenuhnya.</p>
+        </div>
+		<div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
+                  <h4>D. Sayuwiwit (ObGyn)</h4>
+                  <p>RSUD Blambangan memiliki Ruang Perawatan Obstetri & Gynaecology yang merupakan spesialisasi pembedahan yang menangani pelayanan kesehatan alat reproduksi wanita, kesehatan selama masa kehamilan, persalinan, nifas.</p>
+        </div>
+		<div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
+                  <h4>E. Mas Alit (Pediatri)</h4>
+                  <p>RSUD Blambangan memiliki Ruang Perawatan Pediatri yang merupakan pelayanan intensif untuk anak yang memerlukan pengobatan dan perawatan khusus. Gunanya mencegah dan mengobati terjadinya kegagalan organ-organ vital.</p>
+        </div>
+		<div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
+                  <h4>F. Sekardalu (Perinatologi)</h4>
+                  <p>RSUD Blambangan memiliki Ruang Perawatan Perinatologi yang disediakan khusus untuk pasien bayi baru lahir sampai usia 28 hari yang mempunyai masalah/sakit.</p>
+        </div>
+		
+        </div>
 
       </div>
-    </section><!-- End About Section -->
+    </section><!-- End Services Section -->
 
     <!-- ======= Services Section ======= -->
    

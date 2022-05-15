@@ -12,47 +12,70 @@
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+	<section id="services" class="services">
       <div class="container">
 
-	  <div class="row">
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>Instalasi Penunjang</h2>
+        </div>
 
-<div class="col-lg-12 entries">
-<?php foreach($detail as $row) { ?>
-	<article class="entry entry-single" data-aos="fade-up">
-
-		<h2 class="entry-title">
-		  <a href="blog-single.html"><?= $row->judul ?></a>
-		</h2>
-<div class="entry-img">
-  <center><img src="<?= base_url('assets/img/'.$row->gambar) ?>" alt="" class="img-fluid"></center>
-</div>
-
-
-<div class="entry-meta">
-  <ul>
-	<li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="blog-single.html"><?= $row->penulis ?>,  <?= $row->tanggal ?></a></li>
-  </ul>
-</div>
-
-<div class="entry-content">
-  <p>
-	<?= $row->isi ?>
-  </p>
-</div>
-
-
-
-</article><!-- End blog entry -->
-<?php } ?>
-</div><!-- End blog entries list -->
-
-
-
-</div>
+        <div class="row" >
+					<div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
+			<h4>Penunjang Medis</h4>
+                  <h5>a.	Instalasi Bedah Central</h5>
+                  <p>RSUD Blambangan memiliki instalasi bedah central yang bertugas untuk penanganan kasus-kasus bedah yang perlu dioperasi dan ditangani oleh dokter-dokter spesialis dan petugas paramedis profesional sesuai dengan kebutuhan, baik yang direncanakan (Efektif) maupun kondisi gawat (Emergency) yang siap sedia dalam 24 jam.</p>
+        </div>
+		<div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
+                  <h5>b.	Instalasi CSSD</h5>
+                  <p>RSUD Blambangan memiliki instalasi CSSD (Central Sterile Supply Department) yang bertanggung jawab atas pencucian dan distribusi alat yang telah disterilkan di rumah sakit.</p>
+        </div>
+		<div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
+                  <h5>c.	Instalasi Farmasi</h5>
+                  <p>RSUD Blambangan memiliki instalasi farmasi yang dikepalai oleh seorang apoteker dan dibantu oleh beberapa orang apoteker yang memenuhi persyaratan perundang-undangan yang berlaku dan kompeten secara profesional, tempat penyelenggaraan yang bertanggung jawab atas seluruh pekerjaan dan pelayanan kefarmasian. .</p>
+        </div>
+		<div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
+                  <h5>d.	Instalasi Gizi</h5>
+                  <p>RSUD Blambangan memiliki instalasi gizi yang memberikan asupan gizi melalui makanan sehat yang bertujuan untuk memberikan energi dan membangun jaringan tubuh untuk mendapatkan kesembuhan yang prima, mempertahankan kebugaran dan keseimbangan gizi.</p>
+        </div>
+		<div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
+                  <h5>e.	Instalasi Kedokteran Kehakiman</h5>
+                  <p>RSUD Blambangan memiliki instalasi kedokteran kehakiman (forensik) yang merupakan cabang spesialistik ilmu kedokteran yang memanfaatkan ilmu kedokteran untuk kepentingan penegakan hukum, terutama pada bidang hukum pidana. Proses penegakan hukum dan keadilan merupakan suatu usaha ilmiah, dan bukan sekedar common sense, nonscientific belaka.</p>
+        </div>
+		<div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
+                  <h5>f.	Instalasi Laboratorium</h5>
+                  <p>RSUD Blambangan memiliki instalasi laboratorium untuk membantu menegakkan diagnosis yang ditangani oleh para tenaga ahli yang berpengalaman dan kompeten.</p>
+        </div>
+		<div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
+                  <h5>g.	Instalasi Radiologi</h5>
+                  <p>RSUD Blambangan memiliki instalasi radiologi yang memberikan layanan pemeriksaan radiologi dengan hasil pemeriksaan berupa foto/ gambar untuk membantu dokter yang merawat pasien dalam penegakan diagnosis.</p>
+        </div>
+		<div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
+                  <h5>h.	Instalasi Rehab Medik</h5>
+                  <p>RSUD Blambangan memiliki instalasi rehabilitasi medik yang memberikan pelayanan terapi fisik dan rehabilitasi secara terintegrasi dan komprehensif yang bertujuan untuk meningkatkan kualitas hidup dengan mengurangi keterbatasan atau gangguan fungsi yang ada, gangguan yang terjadi dapat disebabkan oleh penyakit, proses degeneratif, trauma dan lain – lain..</p>
+        </div>
+		<div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
+                  <h5>i.	Instalasi Rekam Medis</h5>
+                  <p>RSUD Blambangan memiliki instalasi rekam medik yang mempunyai tugas menyelenggarakan dan mengkoordinasikan pelayanan rekam medis dan pemantauan mutu rekam medis di seluruh unit pelayanan serta menyelenggarakan dan mengkoordinasikan pelayanan admisi pasien rawat jalan maupun pasien rawat inap di RSUD Blambangan.</p>
+        </div>
+				<br><br><br><br><br><br>
+				<div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
+					<h4>Penunjang Non Medis</h4>
+                  <h5>a.	Instalasi Pemelihara Sarana (IPS)</h5>
+                  <p>RSUD Blambangan memiliki instalasi pemeliharaan sarana untuk melaksanakan kegiatan teknis instalasi, pemeliharaan dan perbaikan, agar fasilitas yang menunjang pelayanan kesehatan di rumah sakit yaitu sarana, prasarana dan peralatan alat kesehatan RS selalu berada dalam keadaan layak pakai guna menunjang pelayanan kesehatan yang paripurna dan prima kepada pelanggan.</p>
+        </div>
+				<div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
+                  <h5>b.	Instalasi Pengolahan Air Limbah (IPAL)</h5>
+                  <p>RSUD Blambangan memiliki instalasi pengolahan air limbah (IPAL) yang dirancang untuk membuang limbah biologis dan kimiawi dari air sehingga memungkinkan air tersebut untuk digunakan pada aktivitas yang lain.</p>
+        </div>
+				<div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
+                  <h5>c.	Unit Teknologi Informasi & Komunikasi</h5>
+                  <p>RSUD Blambangan memiliki unit teknologi informasi & komunikasi untuk mendukung penyelenggaraan layanan kesehatan, sehingga rumah sakit dapat menyediakan layanan informasi yang lebih baik bagi dokter, pasien maupun tenaga kesehatan lainnya.</p>
+        </div>
+		
+        </div>
 
       </div>
-    </section><!-- End About Section -->
+    </section><!-- End Services Section -->
 
     <!-- ======= Services Section ======= -->
    

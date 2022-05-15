@@ -1,82 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>RSUD Blambangan</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="<?= base_url() ?>assets/img/logo2.png" rel="icon">
-  <link href="<?= base_url() ?>assets/img/logo2.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <script src="<?= base_url() ?>assets/js/sweetalert2-all.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Squadfree - v4.1.0
-  * Template URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top header-transparent">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <div class="logo-rssa">
-        <a href="index.html">
-          <img src="assets/img/logo2.png" alt="" class="img-fluid" style="width:200px;height:100px;"></a>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">Tentang Kami</a></li>
-          <li><a class="nav-link scrollto" href="#services">Layanan</a></li>
-          <li><a class="nav-link scrollto" href="#counts">Penunjang</a></li>
-          <li><a class="nav-link scrollto" href="#cta">Informasi Publik</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Galeri</a></li>
-          <li><a class="nav-link scrollto" href="<?= base_url('Utama/artikel') ?>">Artikel</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#contact">Kontak Kami</a></li> -->
-          <li>
-            <?php if ($this->session->userdata('no_rm') == null) { ?>
-              <a href="<?= base_url('Login/login_user') ?>" class="nav-link scrollto">Login - Daftar Online</a>
-            <?php } else { ?>
-              <a href="<?= base_url('Users') ?>" class="nav-link scrollto">Silahkan Daftar Poli</a>
-            <?php } ?>
-          </li>
-
-          <?php if ($this->session->userdata('no_rm') == null) { ?>
-            <li><a class="getstarted scrollto" href="<?= base_url(); ?>login">Admin</a></li>
-          <?php } ?>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
+<?php $this->load->view('header_view') ?>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
@@ -98,7 +20,7 @@
             <div class="content">
               <h3>PROFIL RUMAH SAKIT</h3>
               <p>
-                Rumah Sakit Umum Daerah Blambangan Banyuwangi telah menginjak usia yang ke-41 tahun pada tahun 2020. Selama jangka waktu tersebut, tentu tidak sedikit prestasi yang telah dicapai. Awal berdirinya RSSA hanyalah rumah sakit militer milik KNIL (Koninklijke Nederlandsch-Indische Leger), dan sekarang menjadi Rumah Sakit Pendidikan Utama Tipe A milik Pemerintah Provinsi Jawa Timur.
+							Berdiri sejak tahun 1930 sebagai Pusat Kesehatan Sederhana jaman Belanda, yang hanya melayani Pelayanan Kesehatan Dasar dan Penyakit Menular hingga sekarang berkembang menjadi Rumah Sakit Kelas B Pemerintah dan lulus Akreditasi PARIPURNA KARS 2012
               </p>
               <a href="#" class="about-btn">Tentang Kami <i class="bx bx-chevron-right"></i></a>
             </div>
@@ -109,7 +31,7 @@
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
                   <i class="bx bx-chevrons-down"></i>
                   <h4>Visi</h4>
-                  <p>Menjadi Rumah Sakit Berstandar Kelas Dunia Pilihan Masyarakat</p>
+                  <p>Menjadi Rumah Sakit Andalan dan Pusat Rujukan Spesialistik di Kabupaten Banyuwangi</p>
                 </div>
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
                   <i class="bx bx-chevrons-down"></i>
@@ -119,7 +41,8 @@
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
                   <i class="bx bx-chevrons-down"></i>
                   <h4>Misi</h4>
-                  <p>Terwujudnya Pelayanan Kesehatan dan Pendidikan Berstandar Internasional Dengan Mengutamakan Keselamatan Pasien dan Berfokus Pada Kepuasan Pelanggan</p>
+                  <p>1.	Menyelenggarakan Pelayanan Kesehatan yang Bermutu dan Profesional</p>
+                  <p>2.	Mewujudkan Kinerja Keuangan yang Sehat dan Akuntabel</p>
                 </div>
                 <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
                   <i class="bx bx-chevrons-down"></i>
@@ -149,56 +72,35 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up">
               <div class="icon"><i class="bx bx-receipt"></i></div>
-              <h4 class="title"><a href="">Instalasi Rawat Jalan</a></h4>
+              <h4 class="title"><a href="<?= base_url('Utama/rawat_jalan') ?>">Instalasi Rawat Jalan</a></h4>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class="bx bx-shield"></i></div>
-              <h4 class="title"><a href="">Instalasi Rawat Inap</a></h4>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Instalasi Gawat Darurat</a></h4>
+              <h4 class="title"><a href="<?= base_url('Utama/rawat_inap') ?>">Instalasi Rawat Inap</a></h4>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
               <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="">Instalasi Covid-19 dan Infeksikus Terpadu</a></h4>
+              <h4 class="title"><a href="<?= base_url('Utama/instalasi_penunjang') ?>">Instalasi Penunjang</a></h4>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up">
               <div class="icon"><i class="bx bx-cube-alt"></i></div>
-              <h4 class="title"><a href="">Instalasi Pelayanan Jantung Terpadu</a></h4>
+              <h4 class="title"><a href="<?= base_url('Utama/medhical_check_up') ?>">Medhical Check - Up</a></h4>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">Instalasi Terapi Intensif</a></h4>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon"><i class="bx bxs-quote-alt-left"></i></div>
-              <h4 class="title"><a href="">Pelayanan Informasi Obat</a></h4>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-              <div class="icon"><i class="bx bx-link"></i></div>
-              <h4 class="title"><a href="">Unit Tranfusi Darah</a></h4>
+              <h4 class="title"><a href="<?= base_url('Utama/emergency') ?>">24 Jam Emergency</a></h4>
             </div>
           </div>
         </div>
@@ -258,7 +160,7 @@
         <div class="text-center">
           <h3>INFORMASI PUBLIK</h3>
           <p> Arah pengembangan pelayanan RSSA memang memprioritaskan pelayanan kepada pasien secara terpadu, peningkatan kesehatan lingkungan, peningkatan mutu, pelayanan pendidikan dan penelitian, dan peningkatan kompetensi petugas. Pengembangan ini bertujuan untuk menuju Rumah Sakit Kelas Dunia (World Class Hospital) sesuai dengan visi RSSA. Perkembangan RSSA yang telah dicapai selama ini adalah hasil kerja keras dari semua pihak, khususnya tenaga medis, paramedis, tenaga non medis, serta masyarakat dan pemerintah pada umumnya.</p>
-          <a class="cta-btn" href="#">Informasi Publik</a>
+          <a class="cta-btn" href="<?= base_url('Utama/info') ?>">Informasi Publik</a>
         </div>
 
       </div>

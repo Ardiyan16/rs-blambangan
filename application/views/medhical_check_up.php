@@ -12,47 +12,25 @@
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+	<section id="services" class="services">
       <div class="container">
 
-	  <div class="row">
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>Medical Check Up</h2>
+        </div>
 
-<div class="col-lg-12 entries">
-<?php foreach($detail as $row) { ?>
-	<article class="entry entry-single" data-aos="fade-up">
-
-		<h2 class="entry-title">
-		  <a href="blog-single.html"><?= $row->judul ?></a>
-		</h2>
-<div class="entry-img">
-  <center><img src="<?= base_url('assets/img/'.$row->gambar) ?>" alt="" class="img-fluid"></center>
-</div>
-
-
-<div class="entry-meta">
-  <ul>
-	<li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="blog-single.html"><?= $row->penulis ?>,  <?= $row->tanggal ?></a></li>
-  </ul>
-</div>
-
-<div class="entry-content">
-  <p>
-	<?= $row->isi ?>
-  </p>
-</div>
-
-
-
-</article><!-- End blog entry -->
-<?php } ?>
-</div><!-- End blog entries list -->
-
-
-
-</div>
+        <div class="row" >
+					<div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
+                  <h5>a.	Klinik Umum dan MCU</h5>
+                  <p>RSUD BLAMBANGAN memiliki Medical Checkup yang memberikan pelayanan pertama yang disediakan bagi seluruh pasien yang datang dengan segala keluhan atau masalah kesehatan yang dialaminya. MEDICAL CHECKUP memberikan konsultasi dan pengobatan kepada para pasien yang datang, atau untuk beberapa kasus dengan spesifikasi atau kekhususan tertentu akan dirujuk ke dokter spesailis lainnya dengan pengantar yang jelas dari dokter umum RSUD Blambangan.</p>
+        </div>
+	
+				
+		
+        </div>
 
       </div>
-    </section><!-- End About Section -->
+    </section><!-- End Services Section -->
 
     <!-- ======= Services Section ======= -->
    

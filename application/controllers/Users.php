@@ -543,16 +543,18 @@ class Users extends CI_Controller
         $no_antri = $this->m_antrian->no_antrian();
         $data['sisa'] = $no_antri->no_antrian - $this->m_antrian->sisa_antrian2($datapoli) - 1;
         $sisanya = ($no_antri->no_antrian - $this->m_antrian->sisa_antrian2($datapoli) - 1) * 30;
+		$time_sekarang = time();
         date_default_timezone_set('Asia/Jakarta');
         $data['waktu'] = strtotime(date("h:i"));
         $data['sisanya'] = $sisanya;
+		$hasil = date("H:i", strtotime("$sisanya minutes", $time_sekarang));
         if ($sisanya === 0) {
             $sisanya = 10;
         }
         $userkey = 'fa5793a42b9a';
         $passkey = 'd3bea3d15985f7ef232a4e9b';
         $telepon = $this->session->userdata('no_wa');
-        $message = 'Sisa Antrian Atas Nama ' . $nama . ' pada ' . $namapoli->poli . ' dengan nomor antrian ' . $antrian->no_antrian . '. Antrian anda akan dilaksanakan kurang lebih ' . $sisanya . ' menit lagi';
+        $message = 'Sisa Antrian Atas Nama ' . $nama . ' pada ' . $namapoli->poli . ' dengan nomor antrian ' . $antrian->no_antrian . '. Antrian anda akan dilaksanakan kurang lebih ' . $hasil . ' menit lagi';
         $url = 'https://console.zenziva.net/wareguler/api/sendWA/';
         $curlHandle = curl_init();
         curl_setopt($curlHandle, CURLOPT_URL, $url);

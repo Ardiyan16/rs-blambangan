@@ -27,4 +27,24 @@ class Utama extends CI_controller
 		$data['detail'] = $this->db->query("SELECT * FROM artikel WHERE id='$id'")->result();
 		$this->load->view("detail_artikel", $data);
 	}
+
+	public function rawat_jalan(){
+		$this->load->view("rawatjalan_view");
+	}
+	public function rawat_inap(){
+		$this->load->view("rawatinap_view");
+	}
+	public function instalasi_penunjang(){
+		$this->load->view("instalasi_penunjang");
+	}
+	public function medhical_check_up(){
+		$this->load->view("medhical_check_up");
+	}
+	public function emergency(){
+		$this->load->view("emergency");
+	}
+	public function info(){
+		$this->load->view("info_view");
+	}
+
 }

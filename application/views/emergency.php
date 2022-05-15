@@ -12,47 +12,33 @@
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+	<section id="services" class="services">
       <div class="container">
 
-	  <div class="row">
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>•	24 Jam Emergency</h2>
+        </div>
 
-<div class="col-lg-12 entries">
-<?php foreach($detail as $row) { ?>
-	<article class="entry entry-single" data-aos="fade-up">
+        <div class="row" >
+					<div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
+                  <h5>a.	Instalasi Gawat Darurat</h5>
+                  <p>Pelayanan Instalasi Gawat Darurat (IGD) adalah salah satu ujung tombak pelayanan kesehatan di sebuah rumah sakit. Setiap rumah sakit pasti memiliki layanan IGD yang melayani pelayanan medis 24 jam. RSUD BLAMBANGAN juga memiliki layanan IGD 24 jam dengan beberapa dokter umum yang melayaninya. IGD 24 jam melayani kasus-kasus khususnya gawat darurat.
 
-		<h2 class="entry-title">
-		  <a href="blog-single.html"><?= $row->judul ?></a>
-		</h2>
-<div class="entry-img">
-  <center><img src="<?= base_url('assets/img/'.$row->gambar) ?>" alt="" class="img-fluid"></center>
-</div>
+Tujuan dari pelayanan gawat darurat ini adalah untuk memberikan pertolongan pertama bagi pasien yang dating dan menghindari berbagai resiko, seperti: kematian, menanggulangi korban kecelakaan, atau bencana lainnya yang langsung membutuhkan tindakan.
 
-
-<div class="entry-meta">
-  <ul>
-	<li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="blog-single.html"><?= $row->penulis ?>,  <?= $row->tanggal ?></a></li>
-  </ul>
-</div>
-
-<div class="entry-content">
-  <p>
-	<?= $row->isi ?>
-  </p>
-</div>
-
-
-
-</article><!-- End blog entry -->
-<?php } ?>
-</div><!-- End blog entries list -->
-
-
-
-</div>
+Pelayanan pada Unit Gawat Darurat untuk pasien yang datangakan langsung dilakukan tindakan sesuai dengan kebutuhan dan prioritasnya. Bagi pasien yang tergolong emergency (akut) akan langsung dilakukan tindakan menyelamatkan jiwa pasien (life saving). Bagi pasien yang tergolong tidak akut dan gawat akan dilakukan pengobatan sesuai dengan kebutuhan dan kasus masalahnya yang setelah itu akan dipulangkan kerumah.
+</p>
+        </div>
+		<div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
+                  <h5>b.	Ambulance </h5>
+                  <p>RSUD Blambangan juga melayani antar jemput pasien menggunkan ambulance yang telah tersedia di rumah sakit dengan driver yang telah pengalaman dibidangnya. Untuk Informasi Silakan Hub. Telp Ambulance Call di (0333) 421119 ext. 118</p>
+        </div>
+		
+		
+        </div>
 
       </div>
-    </section><!-- End About Section -->
+    </section><!-- End Services Section -->
 
     <!-- ======= Services Section ======= -->
    

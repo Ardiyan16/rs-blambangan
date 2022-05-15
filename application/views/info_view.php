@@ -12,47 +12,73 @@
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+	<section id="services" class="services">
       <div class="container">
 
-	  <div class="row">
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>Info</h2>
+        </div>
+		<div class="row" >
+          <div class="col-md-6 col-lg-3  align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up">
+              <div class="icon"><i class="bx bx-receipt"></i></div>
+              <h4 class="title"><a href="<?= base_url('Utama/rawat_jalan') ?>">E-Room</a></h4>
+            </div>
+          </div>
 
-<div class="col-lg-12 entries">
-<?php foreach($detail as $row) { ?>
-	<article class="entry entry-single" data-aos="fade-up">
+          <div class="col-md-6 col-lg-3  align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bx-shield"></i></div>
+              <h4 class="title"><a href="<?= base_url('Utama/rawat_inap') ?>">Fasilitas</a></h4>
+            </div>
+          </div>
 
-		<h2 class="entry-title">
-		  <a href="blog-single.html"><?= $row->judul ?></a>
-		</h2>
-<div class="entry-img">
-  <center><img src="<?= base_url('assets/img/'.$row->gambar) ?>" alt="" class="img-fluid"></center>
-</div>
+          <div class="col-md-6 col-lg-3  align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="<?= base_url('Utama/instalasi_penunjang') ?>">WBS(wishtle blowing system)</a></h4>
+            </div>
+          </div>
 
+          <div class="col-md-6 col-lg-3  align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up">
+              <div class="icon"><i class="bx bx-cube-alt"></i></div>
+              <h4 class="title"><a href="<?= base_url('Utama/medhical_check_up') ?>">Radio</a></h4>
+            </div>
+          </div>
 
-<div class="entry-meta">
-  <ul>
-	<li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="blog-single.html"><?= $row->penulis ?>,  <?= $row->tanggal ?></a></li>
-  </ul>
-</div>
+          <div class="col-md-6 col-lg-3  align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="<?= base_url('Utama/emergency') ?>">Tarif</a></h4>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3  align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="<?= base_url('Utama/emergency') ?>">Penjamin</a></h4>
+            </div>
+          </div>
+		  <div class="col-md-6 col-lg-3  align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bx-shield"></i></div>
+              <h4 class="title"><a href="<?= base_url('Utama/rawat_inap') ?>">Pasien</a></h4>
+            </div>
+          </div>
+		  <div class="col-md-6 col-lg-3  align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bx-shield"></i></div>
+              <h4 class="title"><a href="<?= base_url('Utama/rawat_inap') ?>">Pengunjung</a></h4>
+            </div>
+          </div>
 
-<div class="entry-content">
-  <p>
-	<?= $row->isi ?>
-  </p>
-</div>
-
-
-
-</article><!-- End blog entry -->
-<?php } ?>
-</div><!-- End blog entries list -->
-
-
-
-</div>
+        </div>
+		
+		
+        </div>
 
       </div>
-    </section><!-- End About Section -->
+    </section><!-- End Services Section -->
 
     <!-- ======= Services Section ======= -->
    
