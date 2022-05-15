@@ -8,6 +8,12 @@ class Users extends CI_Controller
         $this->load->library('form_validation');
         $this->load->helper("url");
         $this->load->model('antrian_model', 'm_antrian');
+        if ($this->session->userdata('status') != "1") {
+            echo "<script>
+                alert('Anda harus login terlebih dahulu');
+                window.location.href = '" . base_url('Login/login') . "';
+            </script>"; //Url Logi
+        }
     }
 
     public function index()
