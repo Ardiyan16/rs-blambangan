@@ -35,10 +35,15 @@
                     </div>
                     <hr>
                     <p><?= $namapoli->poli ?></p>
-                    <p>pengobatan anda diperkirakan pukul <?php
+                    <p> <?php
                                                             // $time_sekarang = time();
                                                             // date_default_timezone_set('Asia/Jakarta');
-                                                            echo date("H:i",strtotime("$sisanya minutes", $detail->jam));
+                                                            if($detail->status == 1) {
+                                                                echo 'pengobatan anda diperkirakan pada pukul ', date("H:i",strtotime("$sisanya minutes", $detail->jam));
+                                                            } else {
+                                                                echo 'anda selesai berobat';
+                                                            }
+                                                            
                                                             ?></p>
                     <p>Sisa Antrian = <?= $sisa ?></p>
                     <!-- <a href="<?= base_url('Users/coba_wa') ?>" class="btn btn-success">coba whatsapp</a> -->
