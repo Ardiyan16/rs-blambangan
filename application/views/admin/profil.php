@@ -75,23 +75,23 @@
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Manajemen Artikel
+               Admin
             </div>
 
   
            <!-- Nav Item - Charts -->
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="<?php echo site_url('tag');?>">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Tag</span></a>
-            </li>
+            </li> -->
 
             <!-- Nav Item - Tables -->
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="<?php echo site_url('kategori');?>">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Kategori</span></a>
-            </li>
+            </li> -->
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
@@ -290,7 +290,7 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="<?= base_url();?>">Logout</a>
+                    <a class="btn btn-primary" href="<?= base_url('Logout/logout_admin'); ?>">Logout</a>
                 </div>
             </div>
         </div>

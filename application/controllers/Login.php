@@ -21,6 +21,10 @@ class Login extends CI_Controller
     if (empty($data)) {
       redirect('login?error=gagal');
     } else {
+			$data = [
+				'admin' => 'login',
+			];
+			$this->session->set_userdata($data);
       redirect('admin');
     }
   }

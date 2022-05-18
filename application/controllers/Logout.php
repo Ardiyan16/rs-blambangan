@@ -16,6 +16,11 @@ class Logout extends CI_Controller {
     	$this->session->set_flashdata('logout', true);
 		redirect('Login/login_user');
 	}
+
+	public function logout_admin(){
+		$this->session->unset_userdata('admin');
+		redirect('Utama');
+	}
 	
 }
 ?>

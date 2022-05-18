@@ -49,14 +49,6 @@
                   <p>1.	Menyelenggarakan Pelayanan Kesehatan yang Bermutu dan Profesional</p>
                   <p>2.	Mewujudkan Kinerja Keuangan yang Sehat dan Akuntabel</p>
                 </div>
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-                  <i class="bx bx-chevrons-down"></i>
-                  <h4>Nilai Dasar</h4>
-                  <p>R : Respect</p>
-                  <p>S : Safety</p>
-                  <p>S : Sinergy</p>
-                  <p>A : Accountable</p>
-                </div>
               </div>
             </div><!-- End .content-->
           </div>

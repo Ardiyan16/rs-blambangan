@@ -68,9 +68,11 @@
             <?php } ?>
           </li>
 
-          <?php if ($this->session->userdata('no_rm') == null) { ?>
+          <?php if ($this->session->userdata('admin') == null) { ?>
             <li><a class="getstarted scrollto" href="<?= base_url(); ?>login">Admin</a></li>
-          <?php } ?>
+						<?php }else{ ?>
+            <li><a class="getstarted scrollto" href="<?= base_url(); ?>admin">Admin</a></li>
+						<?php } ?>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

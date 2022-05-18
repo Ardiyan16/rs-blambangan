@@ -44,14 +44,7 @@
                   <p>1.	Menyelenggarakan Pelayanan Kesehatan yang Bermutu dan Profesional</p>
                   <p>2.	Mewujudkan Kinerja Keuangan yang Sehat dan Akuntabel</p>
                 </div>
-                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-                  <i class="bx bx-chevrons-down"></i>
-                  <h4>Nilai Dasar</h4>
-                  <p>R : Respect</p>
-                  <p>S : Safety</p>
-                  <p>S : Sinergy</p>
-                  <p>A : Accountable</p>
-                </div>
+             
               </div>
             </div><!-- End .content-->
           </div>
@@ -68,39 +61,39 @@
           <h2>LAYANAN</h2>
         </div>
 
-        <div class="row" style="width:1000px;height:500px" ;>
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+        <div class="row justify-content-md-center" >
+          <div class="col-md-6 col-lg-2  align-items-stretch">
             <div class="icon-box" data-aos="fade-up">
               <div class="icon"><i class="bx bx-receipt"></i></div>
               <h4 class="title"><a href="<?= base_url('Utama/rawat_jalan') ?>">Instalasi Rawat Jalan</a></h4>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="col-md-6 col-lg-2  align-items-stretch">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class="bx bx-shield"></i></div>
               <h4 class="title"><a href="<?= base_url('Utama/rawat_inap') ?>">Instalasi Rawat Inap</a></h4>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="col-md-6 col-lg-2  align-items-stretch">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
               <div class="icon"><i class="bx bx-world"></i></div>
               <h4 class="title"><a href="<?= base_url('Utama/instalasi_penunjang') ?>">Instalasi Penunjang</a></h4>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="col-md-6 col-lg-2  align-items-stretch">
             <div class="icon-box" data-aos="fade-up">
               <div class="icon"><i class="bx bx-cube-alt"></i></div>
               <h4 class="title"><a href="<?= base_url('Utama/medhical_check_up') ?>">Medhical Check - Up</a></h4>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="col-md-6 col-lg-2  align-items-stretch">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="<?= base_url('Utama/emergency') ?>">24 Jam Emergency</a></h4>
+              <h4 class="title"><a href="<?= base_url('Utama/emergency') ?>"> 24 Jam Emergency</a></h4>
             </div>
           </div>
         </div>
@@ -128,7 +121,7 @@
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="11" data-purecounter-duration="11" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="9" data-purecounter-duration="9" class="purecounter"></span>
               <p><strong>Penunjang Medis</strong></p>
             </div>
           </div>
@@ -136,7 +129,7 @@
           <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
               <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="5" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="3" class="purecounter"></span>
               <p><strong>Penunjang Non-Medis</strong></p>
             </div>
           </div>
@@ -159,7 +152,7 @@
 
         <div class="text-center">
           <h3>INFORMASI PUBLIK</h3>
-          <p> Arah pengembangan pelayanan RSSA memang memprioritaskan pelayanan kepada pasien secara terpadu, peningkatan kesehatan lingkungan, peningkatan mutu, pelayanan pendidikan dan penelitian, dan peningkatan kompetensi petugas. Pengembangan ini bertujuan untuk menuju Rumah Sakit Kelas Dunia (World Class Hospital) sesuai dengan visi RSSA. Perkembangan RSSA yang telah dicapai selama ini adalah hasil kerja keras dari semua pihak, khususnya tenaga medis, paramedis, tenaga non medis, serta masyarakat dan pemerintah pada umumnya.</p>
+          <p> Berisi informasi apa saja yang ada pada RSUD Blambangan untuk memberikan pelayanan kepada pasien secara terpadu, peningkatan kesehatan lingkungan, peningkatan mutu, pelayanan pendidikan dan penelitian, dan peningkatan kompetensi petugas. Pengembangan ini bertujuan untuk menuju Rumah Sakit Kelas Terbaik di Banyuwangi. .</p>
           <a class="cta-btn" href="<?= base_url('Utama/info') ?>">Informasi Publik</a>
         </div>
 
@@ -235,7 +228,8 @@
 
         <div class="text-center">
           <h3>ARTIKEL</h3>
-          <p> Arah pengembangan pelayanan RSSA memang memprioritaskan pelayanan kepada pasien secara terpadu, peningkatan kesehatan lingkungan, peningkatan mutu, pelayanan pendidikan dan penelitian, dan peningkatan kompetensi petugas. Pengembangan ini bertujuan untuk menuju Rumah Sakit Kelas Dunia (World Class Hospital) sesuai dengan visi RSSA. Perkembangan RSSA yang telah dicapai selama ini adalah hasil kerja keras dari semua pihak, khususnya tenaga medis, paramedis, tenaga non medis, serta masyarakat dan pemerintah pada umumnya.</p>
+          <p> Berisi informasi kesehatan yang sedang mendapatkan perhatian khusus pada saat ini. Serta untuk mendapatkan edukasi kepada para pasien agar dapat selalu menjaga kesehatan.</p>
+					<a class="cta-btn" href="<?= base_url('Utama/artikel') ?>">Lihat Artikel</a>
         </div>
 
       </div>
@@ -333,9 +327,9 @@
                 <strong>No. Telp :</strong> 0341 362101 ext 1100<br>
               </p>
               <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://twitter.com/rsudblambangan?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.facebook.com/RSUD-BLAMBANGAN-BANYUWANGI-JAWA-TIMUR-203675609828041/" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/rsudblambangan/?hl=id#:~:text=RSUD%20Blambangan%20(%40rsudblambangan)%20•%20Instagram%20photos%20and%20videos" class="instagram"><i class="bx bxl-instagram"></i></a>
               </div>
             </div>
           </div>
@@ -344,14 +338,13 @@
             <h4>KATEGORI</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Tentang Kami</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Layanan</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Penunjang</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Informasi Publik</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Galeri</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Artikel</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Kontak Kami</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">LOGIN</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('Utama/waktu_layanan') ?>">Waktu Layanan</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('Utama/dokter') ?>">Dokter</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('Utama/info') ?>">Informasi</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#portofolio">Galeri</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('Utama/artikel') ?>">Artikel</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('Login/login_user') ?>">Daftar Online</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url(); ?>login">Admin</a></li>
             </ul>
           </div>
 
@@ -368,7 +361,7 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/ -->
-        <a href="">KELOMPOK 4 GOLONGAN C</a>
+        <a href="">KELOMPOK 6 GOLONGAN D</a>
       </div>
     </div>
   </footer><!-- End Footer -->

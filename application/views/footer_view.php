@@ -1,21 +1,62 @@
-<!-- Optional JavaScript; choose one of the two! -->
+ <!-- ======= Footer ======= -->
+ <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3><strong>Pelayanan Pengaduan Masyarakat</strong></h3>
+              <p class="pb-3">(Complain Centre lt. 1)</p>
+              <p><br>SMS PENGADUAN : 081555606668<br>
+                <br>
+                <strong>Email :</strong> rsudblambangan@gmail.com<br>
+                <strong>No. Telp :</strong> 0341 362101 ext 1100<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="https://twitter.com/rsudblambangan?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.facebook.com/RSUD-BLAMBANGAN-BANYUWANGI-JAWA-TIMUR-203675609828041/" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/rsudblambangan/?hl=id#:~:text=RSUD%20Blambangan%20(%40rsudblambangan)%20•%20Instagram%20photos%20and%20videos" class="instagram"><i class="bx bxl-instagram"></i></a>
+              </div>
+            </div>
+          </div>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    -->
-  </body>
-</html>
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>KATEGORI</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('Utama/waktu_layanan') ?>">Waktu Layanan</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('Utama/dokter') ?>">Dokter</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('Utama/info') ?>">Informasi</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#portofolio">Galeri</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('Utama/artikel') ?>">Artikel</a></li>
+							<?php if ($this->session->userdata('no_rm') == null) { ?>
+              <li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('Login/login_user') ?>">Daftar Online</a></li>
+							<?php } else { ?>
+								<li><i class="bx bx-chevron-right"></i> <a href="<?= base_url('Users') ?>">Silahkan Daftar Poli</a></li>
+								<?php } ?>
+								<?php if ($this->session->userdata('admin') == null) { ?>
+									<li><i class="bx bx-chevron-right"></i> <a href="<?= base_url(); ?>login">Admin</a></li>
+									<?php }else{ ?>
+										<li><i class="bx bx-chevron-right"></i> <a href="<?= base_url(); ?>admin">Admin</a></li>
+										<?php } ?>
+            </ul>
+          </div>
 
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    Copyright © 2020 
-    <a class="text-dark" href="https://rekam-medik.com/">www.rsud-dr-saiful-anwar-malang.com</a>
-  </div>
-  <!-- Copyright -->
-</footer>
-<!-- Footer -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        <strong><span>RSUD Blambangan Banyuwangi</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/ -->
+        <a href="">KELOMPOK 6 GOLONGAN D</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->

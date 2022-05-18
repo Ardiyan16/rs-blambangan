@@ -46,7 +46,7 @@
             <div class="logo-rssa">
                 <a href="<?= base_url() ?>">
                     <img src="<?= base_url() ?>assets/img/logo2.png" alt="" class="img-fluid" style="width:100px;height:100px;">
-                    <h5 style="color:white;">RS Blambangan</h5>
+                    <h5 style="color:white;">RSUD Blambangan</h5>
                 </a>
                 <!-- Uncomment below if you prefer to use an image logo -->
                 <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
@@ -68,7 +68,7 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5><?= $this->session->flashdata('success') ?></h5>
-                                <h4 class="card-title text-center" style="margin-bottom: 50px; font-family: poppins; font-weight: bold;">Login - Daftar Online</h4>
+                                <h4 class="card-title text-center" style="margin-bottom: 50px; font-family: poppins; font-weight: bold;">Daftar Online</h4>
                                 <form class="form" action="<?= base_url('Login/login') ?>" method="post">
                                     <div class="input-group justify-content-center">
                                         <div class="form-group">
