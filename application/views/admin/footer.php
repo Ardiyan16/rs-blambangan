@@ -114,6 +114,15 @@
  </div>
 
  <!-- Bootstrap core JavaScript-->
+ <script type='text/javascript' src='<?php echo base_url(); ?>assets/ckeditor/ckeditor.js'></script>  
+ <script>
+var ckeditor = CKEDITOR.replace('ckeditor',{
+			height:'600px'
+});
+
+CKEDITOR.disableAutoInline = true;
+CKEDITOR.inline('editable');
+</script>
  <script src="<?php echo base_url('template/sbadmin/vendor/jquery/jquery.min.js') ?>"></script>
  <script src="<?php echo base_url('template/sbadmin/vendor/bootstrap/js/bootstrap.bundle.min.j') ?>s"></script>
 
@@ -130,6 +139,7 @@
 
  <!-- Page level custom scripts -->
  <script src="<?php echo base_url('template/sbadmin/js/demo/datatables-demo.js') ?>"></script>
+ 
  <script>
      $('#dataTag').dataTable({
          "columns": [

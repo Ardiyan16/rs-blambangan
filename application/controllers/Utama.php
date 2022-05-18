@@ -46,5 +46,11 @@ class Utama extends CI_controller
 	public function info(){
 		$this->load->view("info_view");
 	}
+	public function waktu_layanan(){
+		$this->load->view("waktu_layanan");
+	}
+	public function dokter(){
+		$this->load->view("dokter");
+	}
 
 }

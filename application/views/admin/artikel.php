@@ -37,7 +37,7 @@
 					</div>
 					<div class="form-group">
 						<label for="comment">Isi</label>
-						<textarea class="form-control" rows="4" placeholder="Masukkan Isi" name="isi"></textarea>
+						<textarea id="ckeditor" class="form-control" rows="4" placeholder="Masukkan Isi" name="isi"></textarea>
 					</div>
 					<div class="form-group text-right">
 						<button type="submit" class="btn btn-primary">Tambah</button>
@@ -70,7 +70,6 @@
 
 								</tr>
 							</thead>
-
 							<tbody>
 								<?php foreach ($artikel as $row) { ?>
 									<tr>
@@ -78,13 +77,11 @@
 										<td><?php echo $row->judul; ?></td>
 										<td><?php echo $row->tanggal; ?></td>
 										<td><?php echo $row->penulis; ?></td>
-										<td><img src="<?= base_url('assets/img/' . $row->gambar); ?>" width="80px" height="80px" alt="">
-										</td>
 										<td><?php echo substr($row->isi, 0, 150); ?></td>
 										<td>
 											<div class="form-group text-right">
 												<form>
-													<button type="button" class="btn btn-primary " data-toggle="modal" data-target="#editModal">Rubah</button>
+													<!-- <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#editModal">Rubah</button> -->
 													<a href="<?= base_url('artikel/hapusartikel/' . $row->id) ?>" class="btn btn-danger">Hapus</a>
 												</form>
 											</div>

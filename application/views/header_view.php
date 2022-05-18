@@ -53,9 +53,9 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="<?= base_url() ?>">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">Tentang Kami</a></li>
-          <li><a class="nav-link scrollto" href="#services">Layanan</a></li>
-          <li><a class="nav-link scrollto" href="#counts">Dokter</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#about">Tentang Kami</a></li> -->
+          <li><a class="nav-link scrollto" href="<?= base_url('Utama/waktu_layanan') ?>">Waktu Layanan</a></li>
+          <li><a class="nav-link scrollto" href="<?= base_url('Utama/dokter') ?>">Dokter</a></li>
           <li><a class="nav-link scrollto" href="<?= base_url('Utama/info') ?>">Informasi</a></li>
           <li><a class="nav-link scrollto" href="#portfolio">Galeri</a></li>
           <li><a class="nav-link scrollto" href="<?= base_url('Utama/artikel') ?>">Artikel</a></li>
