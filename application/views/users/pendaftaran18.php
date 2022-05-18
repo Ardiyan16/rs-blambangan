@@ -181,9 +181,17 @@
 <script>
     <?php if ($this->session->flashdata('sudahdaftar')) : ?>
         Swal.fire({
-            icon: 'success',
+            icon: 'warning',
             title: 'Anda sudah mendaftar sebelumnya!',
             text: 'Silahkan tunggu anda selesai pengobatan',
+            showConfirmButton: true,
+            // timer: 1500
+        })
+    <?php elseif ($this->session->flashdata('statusklinik')) : ?>
+        Swal.fire({
+            icon: 'warning',
+            title: 'Mohon maaf klink sedang tutup!',
+            text: 'silahkan mendaftar ketika sudah buka',
             showConfirmButton: true,
             // timer: 1500
         })

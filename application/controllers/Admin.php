@@ -35,6 +35,8 @@ class Admin extends CI_controller
 		$data['klinik_tht'] = $this->m_artikel->antri_klinik_tht();
 		$data['klinik_urologi'] = $this->m_artikel->antri_klinik_urologi();
 		$data['klinik_vct'] = $this->m_artikel->antri_klinik_vct();
+		$data['jam_kerja'] = $this->db->get_where('kondisi', ['id' => 1])->row();
+		// var_dump($data['jam_kerja']);
 		$this->load->view("admin_view", $data);
 	}
 }

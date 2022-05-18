@@ -185,353 +185,485 @@ class Users extends CI_Controller
     public function save_pendaftaran1()
     {
         $data = $this->m_antrian->get_pendaftaran();
+        $status_klinik = $this->db->get_where('kondisi', ['id' => 1])->row();
         $nik = $this->input->post('nik_users');
         $datapoli = 1;
         // $tgl = $this->input->post('tgl_pendaftaran');
-        if ($data->status == "1") {
-            $this->session->set_flashdata('sudahdaftar', true);
+        if ($status_klinik->status == "0") {
+            $this->session->set_flashdata('statusklinik', true);
             redirect('Users/pendaftaran1');
         } else {
-            $this->m_antrian->save_pendaftaran();
-            $this->session->set_flashdata('insert', true);
-            redirect('Users/konfirmasi/' . $datapoli);
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran1');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi/' . $datapoli);
+            }
         }
     }
 
     public function save_pendaftaran2()
     {
         $data = $this->m_antrian->get_pendaftaran();
+        $status_klinik = $this->db->get_where('kondisi', ['id' => 1])->row();
         $nik = $this->input->post('nik_users');
         $datapoli = 2;
         // $tgl = $this->input->post('tgl_pendaftaran');
-        if ($data->status == "1") {
-            $this->session->set_flashdata('sudahdaftar', true);
+        if ($status_klinik->status == "0") {
+            $this->session->set_flashdata('statusklinik', true);
             redirect('Users/pendaftaran2');
         } else {
-            $this->m_antrian->save_pendaftaran();
-            $this->session->set_flashdata('insert', true);
-            redirect('Users/konfirmasi/' . $datapoli);
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran2');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi/' . $datapoli);
+            }
         }
     }
 
     public function save_pendaftaran3()
     {
         $data = $this->m_antrian->get_pendaftaran();
+        $status_klinik = $this->db->get_where('kondisi', ['id' => 1])->row();
         $nik = $this->input->post('nik_users');
         $datapoli = 3;
         // $tgl = $this->input->post('tgl_pendaftaran');
-        if ($data->status == "1") {
-            $this->session->set_flashdata('sudahdaftar', true);
+        if ($status_klinik->status == "0") {
+            $this->session->set_flashdata('statusklinik', true);
             redirect('Users/pendaftaran3');
         } else {
-            $this->m_antrian->save_pendaftaran();
-            $this->session->set_flashdata('insert', true);
-            redirect('Users/konfirmasi/' . $datapoli);
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran3');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi/' . $datapoli);
+            }
         }
     }
 
     public function save_pendaftaran4()
     {
         $data = $this->m_antrian->get_pendaftaran();
+        $status_klinik = $this->db->get_where('kondisi', ['id' => 1])->row();
         $nik = $this->input->post('nik_users');
         $datapoli = 4;
         // $tgl = $this->input->post('tgl_pendaftaran');
-        if ($data->status == "1") {
-            $this->session->set_flashdata('sudahdaftar', true);
+        if ($status_klinik->status == "0") {
+            $this->session->set_flashdata('statusklinik', true);
             redirect('Users/pendaftaran4');
         } else {
-            $this->m_antrian->save_pendaftaran();
-            $this->session->set_flashdata('insert', true);
-            redirect('Users/konfirmasi/' . $datapoli);
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran4');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi/' . $datapoli);
+            }
         }
     }
 
     public function save_pendaftaran5()
     {
         $data = $this->m_antrian->get_pendaftaran();
+        $status_klinik = $this->db->get_where('kondisi', ['id' => 1])->row();
         $nik = $this->input->post('nik_users');
         $datapoli = 5;
         // $tgl = $this->input->post('tgl_pendaftaran');
-        if ($data->status == "1") {
-            $this->session->set_flashdata('sudahdaftar', true);
+        if ($status_klinik->status == "0") {
+            $this->session->set_flashdata('statusklinik', true);
             redirect('Users/pendaftaran5');
         } else {
-            $this->m_antrian->save_pendaftaran();
-            $this->session->set_flashdata('insert', true);
-            redirect('Users/konfirmasi/' . $datapoli);
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran5');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi/' . $datapoli);
+            }
         }
     }
 
     public function save_pendaftaran6()
     {
         $data = $this->m_antrian->get_pendaftaran();
+        $status_klinik = $this->db->get_where('kondisi', ['id' => 1])->row();
         $nik = $this->input->post('nik_users');
         $datapoli = 6;
         // $tgl = $this->input->post('tgl_pendaftaran');
-        if ($data->status == "1") {
-            $this->session->set_flashdata('sudahdaftar', true);
+        if ($status_klinik->status == "0") {
+            $this->session->set_flashdata('statusklinik', true);
             redirect('Users/pendaftaran6');
         } else {
-            $this->m_antrian->save_pendaftaran();
-            $this->session->set_flashdata('insert', true);
-            redirect('Users/konfirmasi/' . $datapoli);
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran6');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi/' . $datapoli);
+            }
         }
     }
 
     public function save_pendaftaran7()
     {
         $data = $this->m_antrian->get_pendaftaran();
+        $status_klinik = $this->db->get_where('kondisi', ['id' => 1])->row();
         $nik = $this->input->post('nik_users');
         $datapoli = 7;
         // $tgl = $this->input->post('tgl_pendaftaran');
-        if ($data->status == "1") {
-            $this->session->set_flashdata('sudahdaftar', true);
+        if ($status_klinik->status == "0") {
+            $this->session->set_flashdata('statusklinik', true);
             redirect('Users/pendaftaran7');
         } else {
-            $this->m_antrian->save_pendaftaran();
-            $this->session->set_flashdata('insert', true);
-            redirect('Users/konfirmasi/' . $datapoli);
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran7');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi/' . $datapoli);
+            }
         }
     }
 
     public function save_pendaftaran8()
     {
         $data = $this->m_antrian->get_pendaftaran();
+        $status_klinik = $this->db->get_where('kondisi', ['id' => 1])->row();
         $nik = $this->input->post('nik_users');
         $datapoli = 8;
         // $tgl = $this->input->post('tgl_pendaftaran');
-        if ($data->status == "1") {
-            $this->session->set_flashdata('sudahdaftar', true);
+        if ($status_klinik->status == "0") {
+            $this->session->set_flashdata('statusklinik', true);
             redirect('Users/pendaftaran8');
         } else {
-            $this->m_antrian->save_pendaftaran();
-            $this->session->set_flashdata('insert', true);
-            redirect('Users/konfirmasi/' . $datapoli);
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran8');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi/' . $datapoli);
+            }
         }
     }
 
     public function save_pendaftaran9()
     {
         $data = $this->m_antrian->get_pendaftaran();
+        $status_klinik = $this->db->get_where('kondisi', ['id' => 1])->row();
         $nik = $this->input->post('nik_users');
         $datapoli = 9;
         // $tgl = $this->input->post('tgl_pendaftaran');
-        if ($data->status == "1") {
-            $this->session->set_flashdata('sudahdaftar', true);
+        if ($status_klinik->status == "0") {
+            $this->session->set_flashdata('statusklinik', true);
             redirect('Users/pendaftaran9');
         } else {
-            $this->m_antrian->save_pendaftaran();
-            $this->session->set_flashdata('insert', true);
-            redirect('Users/konfirmasi/' . $datapoli);
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran9');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi/' . $datapoli);
+            }
         }
     }
 
     public function save_pendaftaran10()
     {
         $data = $this->m_antrian->get_pendaftaran();
+        $status_klinik = $this->db->get_where('kondisi', ['id' => 1])->row();
         $nik = $this->input->post('nik_users');
         $datapoli = 10;
         // $tgl = $this->input->post('tgl_pendaftaran');
-        if ($data->status == "1") {
-            $this->session->set_flashdata('sudahdaftar', true);
+        if ($status_klinik->status == "0") {
+            $this->session->set_flashdata('statusklinik', true);
             redirect('Users/pendaftaran10');
         } else {
-            $this->m_antrian->save_pendaftaran();
-            $this->session->set_flashdata('insert', true);
-            redirect('Users/konfirmasi/' . $datapoli);
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran10');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi/' . $datapoli);
+            }
         }
     }
 
     public function save_pendaftaran11()
     {
         $data = $this->m_antrian->get_pendaftaran();
+        $status_klinik = $this->db->get_where('kondisi', ['id' => 1])->row();
         $nik = $this->input->post('nik_users');
         $datapoli = 11;
         // $tgl = $this->input->post('tgl_pendaftaran');
-        if ($data->status == "1") {
-            $this->session->set_flashdata('sudahdaftar', true);
+        if ($status_klinik->status == "0") {
+            $this->session->set_flashdata('statusklinik', true);
             redirect('Users/pendaftaran11');
         } else {
-            $this->m_antrian->save_pendaftaran();
-            $this->session->set_flashdata('insert', true);
-            redirect('Users/konfirmasi/' . $datapoli);
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran11');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi/' . $datapoli);
+            }
         }
     }
 
     public function save_pendaftaran12()
     {
         $data = $this->m_antrian->get_pendaftaran();
+        $status_klinik = $this->db->get_where('kondisi', ['id' => 1])->row();
         $nik = $this->input->post('nik_users');
         $datapoli = 12;
         // $tgl = $this->input->post('tgl_pendaftaran');
-        if ($data->status == "1") {
-            $this->session->set_flashdata('sudahdaftar', true);
+        if ($status_klinik->status == "0") {
+            $this->session->set_flashdata('statusklinik', true);
             redirect('Users/pendaftaran12');
         } else {
-            $this->m_antrian->save_pendaftaran();
-            $this->session->set_flashdata('insert', true);
-            redirect('Users/konfirmasi/' . $datapoli);
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran12');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi/' . $datapoli);
+            }
         }
     }
 
     public function save_pendaftaran13()
     {
         $data = $this->m_antrian->get_pendaftaran();
+        $status_klinik = $this->db->get_where('kondisi', ['id' => 1])->row();
         $nik = $this->input->post('nik_users');
         $datapoli = 13;
         // $tgl = $this->input->post('tgl_pendaftaran');
-        if ($data->status == "1") {
-            $this->session->set_flashdata('sudahdaftar', true);
+        if ($status_klinik->status == "0") {
+            $this->session->set_flashdata('statusklinik', true);
             redirect('Users/pendaftaran13');
         } else {
-            $this->m_antrian->save_pendaftaran();
-            $this->session->set_flashdata('insert', true);
-            redirect('Users/konfirmasi/' . $datapoli);
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran13');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi/' . $datapoli);
+            }
         }
     }
 
     public function save_pendaftaran14()
     {
         $data = $this->m_antrian->get_pendaftaran();
+        $status_klinik = $this->db->get_where('kondisi', ['id' => 1])->row();
         $nik = $this->input->post('nik_users');
         $datapoli = 14;
         // $tgl = $this->input->post('tgl_pendaftaran');
-        if ($data->status == "1") {
-            $this->session->set_flashdata('sudahdaftar', true);
+        if ($status_klinik->status == "0") {
+            $this->session->set_flashdata('statusklinik', true);
             redirect('Users/pendaftaran14');
         } else {
-            $this->m_antrian->save_pendaftaran();
-            $this->session->set_flashdata('insert', true);
-            redirect('Users/konfirmasi/' . $datapoli);
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran14');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi/' . $datapoli);
+            }
         }
     }
 
     public function save_pendaftaran15()
     {
         $data = $this->m_antrian->get_pendaftaran();
+        $status_klinik = $this->db->get_where('kondisi', ['id' => 1])->row();
         $nik = $this->input->post('nik_users');
         $datapoli = 15;
         // $tgl = $this->input->post('tgl_pendaftaran');
-        if ($data->status == "1") {
-            $this->session->set_flashdata('sudahdaftar', true);
+        if ($status_klinik->status == "0") {
+            $this->session->set_flashdata('statusklinik', true);
             redirect('Users/pendaftaran15');
         } else {
-            $this->m_antrian->save_pendaftaran();
-            $this->session->set_flashdata('insert', true);
-            redirect('Users/konfirmasi/' . $datapoli);
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran15');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi/' . $datapoli);
+            }
         }
     }
 
     public function save_pendaftaran16()
     {
         $data = $this->m_antrian->get_pendaftaran();
+        $status_klinik = $this->db->get_where('kondisi', ['id' => 1])->row();
         $nik = $this->input->post('nik_users');
         $datapoli = 16;
         // $tgl = $this->input->post('tgl_pendaftaran');
-        if ($data->status == "1") {
-            $this->session->set_flashdata('sudahdaftar', true);
+        if ($status_klinik->status == "0") {
+            $this->session->set_flashdata('statusklinik', true);
             redirect('Users/pendaftaran16');
         } else {
-            $this->m_antrian->save_pendaftaran();
-            $this->session->set_flashdata('insert', true);
-            redirect('Users/konfirmasi/' . $datapoli);
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran16');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi/' . $datapoli);
+            }
         }
     }
 
     public function save_pendaftaran17()
     {
         $data = $this->m_antrian->get_pendaftaran();
+        $status_klinik = $this->db->get_where('kondisi', ['id' => 1])->row();
         $nik = $this->input->post('nik_users');
         $datapoli = 17;
         // $tgl = $this->input->post('tgl_pendaftaran');
-        if ($data->status == "1") {
-            $this->session->set_flashdata('sudahdaftar', true);
+        if ($status_klinik->status == "0") {
+            $this->session->set_flashdata('statusklinik', true);
             redirect('Users/pendaftaran17');
         } else {
-            $this->m_antrian->save_pendaftaran();
-            $this->session->set_flashdata('insert', true);
-            redirect('Users/konfirmasi/' . $datapoli);
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran17');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi/' . $datapoli);
+            }
         }
     }
 
     public function save_pendaftaran18()
     {
         $data = $this->m_antrian->get_pendaftaran();
+        $status_klinik = $this->db->get_where('kondisi', ['id' => 1])->row();
         $nik = $this->input->post('nik_users');
         $datapoli = 18;
         // $tgl = $this->input->post('tgl_pendaftaran');
-        if ($data->status == "1") {
-            $this->session->set_flashdata('sudahdaftar', true);
+        if ($status_klinik->status == "0") {
+            $this->session->set_flashdata('statusklinik', true);
             redirect('Users/pendaftaran18');
         } else {
-            $this->m_antrian->save_pendaftaran();
-            $this->session->set_flashdata('insert', true);
-            redirect('Users/konfirmasi/' . $datapoli);
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran18');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi/' . $datapoli);
+            }
         }
     }
 
     public function save_pendaftaran19()
     {
         $data = $this->m_antrian->get_pendaftaran();
+        $status_klinik = $this->db->get_where('kondisi', ['id' => 1])->row();
         $nik = $this->input->post('nik_users');
         $datapoli = 19;
         // $tgl = $this->input->post('tgl_pendaftaran');
-        if ($data->status == "1") {
-            $this->session->set_flashdata('sudahdaftar', true);
+        if ($status_klinik->status == "0") {
+            $this->session->set_flashdata('statusklinik', true);
             redirect('Users/pendaftaran19');
         } else {
-            $this->m_antrian->save_pendaftaran();
-            $this->session->set_flashdata('insert', true);
-            redirect('Users/konfirmasi/' . $datapoli);
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran19');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi/' . $datapoli);
+            }
         }
     }
 
     public function save_pendaftaran20()
     {
         $data = $this->m_antrian->get_pendaftaran();
+        $status_klinik = $this->db->get_where('kondisi', ['id' => 1])->row();
         $nik = $this->input->post('nik_users');
         $datapoli = 20;
         // $tgl = $this->input->post('tgl_pendaftaran');
-        if ($data->status == "1") {
-            $this->session->set_flashdata('sudahdaftar', true);
+        if ($status_klinik->status == "0") {
+            $this->session->set_flashdata('statusklinik', true);
             redirect('Users/pendaftaran20');
         } else {
-            $this->m_antrian->save_pendaftaran();
-            $this->session->set_flashdata('insert', true);
-            redirect('Users/konfirmasi/' . $datapoli);
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran20');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi/' . $datapoli);
+            }
         }
     }
 
     public function save_pendaftaran21()
     {
         $data = $this->m_antrian->get_pendaftaran();
+        $status_klinik = $this->db->get_where('kondisi', ['id' => 1])->row();
         $nik = $this->input->post('nik_users');
         $datapoli = 21;
         // $tgl = $this->input->post('tgl_pendaftaran');
-        if ($data->status == "1") {
-            $this->session->set_flashdata('sudahdaftar', true);
+        if ($status_klinik->status == "0") {
+            $this->session->set_flashdata('statusklinik', true);
             redirect('Users/pendaftaran21');
         } else {
-            $this->m_antrian->save_pendaftaran();
-            $this->session->set_flashdata('insert', true);
-            redirect('Users/konfirmasi/' . $datapoli);
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran21');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi/' . $datapoli);
+            }
         }
     }
 
     public function save_pendaftaran22()
     {
         $data = $this->m_antrian->get_pendaftaran();
+        $status_klinik = $this->db->get_where('kondisi', ['id' => 1])->row();
         $nik = $this->input->post('nik_users');
         $datapoli = 22;
 
         // $tgl = $this->input->post('tgl_pendaftaran');
-        if ($data->status == "1") {
-            $this->session->set_flashdata('sudahdaftar', true);
+        if ($status_klinik->status == "0") {
+            $this->session->set_flashdata('statusklinik', true);
             redirect('Users/pendaftaran22');
         } else {
-            $this->m_antrian->save_pendaftaran();
-            $this->session->set_flashdata('insert', true);
-            redirect('Users/konfirmasi/' . $datapoli);
+            if ($data->status == "1") {
+                $this->session->set_flashdata('sudahdaftar', true);
+                redirect('Users/pendaftaran22');
+            } else {
+                $this->m_antrian->save_pendaftaran();
+                $this->session->set_flashdata('insert', true);
+                redirect('Users/konfirmasi/' . $datapoli);
+            }
         }
     }
 
@@ -551,11 +683,11 @@ class Users extends CI_Controller
         $no_antri = $this->m_antrian->no_antrian();
         $data['sisa'] = $no_antri->no_antrian - $this->m_antrian->sisa_antrian2($datapoli) - 1;
         $sisanya = ($no_antri->no_antrian - $this->m_antrian->sisa_antrian2($datapoli) - 1) * 30;
-		$time_sekarang = $no_antrian->jam;
+        $time_sekarang = $no_antrian->jam;
         date_default_timezone_set('Asia/Jakarta');
         $data['waktu'] = strtotime(date("h:i"));
         $data['sisanya'] = $sisanya;
-		$hasil = date("H:i", strtotime("$sisanya minutes", $time_sekarang));
+        $hasil = date("H:i", strtotime("$sisanya minutes", $time_sekarang));
         if ($sisanya === 0) {
             $sisanya = 10;
         }
@@ -798,8 +930,7 @@ class Users extends CI_Controller
 
     public function coba()
     {
-        date_default_timezone_set('Asia/Jakarta');
-        $data = date('H:i:s');
-        var_dump($data);
+        $status_klinik = $this->db->get_where('kondisi', ['id' => 1])->row();
+        var_dump($status_klinik->status);
     }
 }

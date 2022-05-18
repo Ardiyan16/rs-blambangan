@@ -35,7 +35,14 @@ class Dashboard extends CI_Controller
 		$data['klinik_tht'] = $this->m_artikel->antri_klinik_tht();
 		$data['klinik_urologi'] = $this->m_artikel->antri_klinik_urologi();
 		$data['klinik_vct'] = $this->m_artikel->antri_klinik_vct();
+		$data['jam_kerja'] = $this->db->get_where('kondisi', ['id' => 1])->row();
 		$this->load->view('admin/dashboard', $data);
+	}
+	
+	public function ubah_jamkerja()
+	{
+		$this->m_artikel->ubah_jamkerja();
+		redirect('Dashboard');
 	}
 
 	public function konfirmasi_user()

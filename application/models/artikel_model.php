@@ -4,6 +4,7 @@ class artikel_model extends CI_Model
 {
 
   private $users = 'users';
+  private $kondisi = 'kondisi';
 
   function insertartikel($judul, $tanggal, $penulis, $isi)
   {
@@ -176,6 +177,14 @@ class artikel_model extends CI_Model
     $this->db->where('id_poli', 22);
     $this->db->where('status', 1);
     return $this->db->count_all_results('pendaftaran');
+  }
+
+  public function ubah_jamkerja()
+  {
+    $post = $this->input->post();
+    $this->id = $post['id'];
+    $this->status = $post['status'];
+    $this->db->update($this->kondisi, $this, ['id' => $post['id']]);
   }
 
   public function get_user()
