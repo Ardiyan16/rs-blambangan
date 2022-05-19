@@ -49,6 +49,7 @@ class Login extends CI_Controller
     $this->form_validation->set_rules('nama', 'Nama', 'required|trim', ['required' => 'nama anda tidak boleh kosong']);
     $this->form_validation->set_rules('no_wa', 'No Whastapp', 'required|trim', ['required' => 'no whatsapp tidak boleh kosong']);
     $this->form_validation->set_rules('jenis_kelamin', 'Jenis Kelamin', 'required|trim', ['required' => 'jenis kelamin tidak boleh kosong']);
+    $this->form_validation->set_rules('alamat', 'Alamat', 'required|trim', ['required' => 'alamat tidak boleh kosong']);
     $this->form_validation->set_rules('tgl_lahir', 'Tanggal Lahir', 'required|trim', ['required' => 'tanggal lahir anda tidak boleh kosong']);
     $this->form_validation->set_rules('password', 'Password', 'required|trim', ['required' => 'password tidak boleh kosong']);
     if ($this->form_validation->run() == false) {
@@ -65,6 +66,7 @@ class Login extends CI_Controller
       'nik' => $this->input->post('nik'),
       'nama' => $this->input->post('nama'),
       'jenis_kelamin' => $this->input->post('jenis_kelamin'),
+      'alamat' => $this->input->post('alamat'),
       'tgl_lahir' => $this->input->post('tgl_lahir'),
       'no_wa' => $this->input->post('no_wa'),
       'password' => password_hash($password, PASSWORD_BCRYPT),
