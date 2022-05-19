@@ -55,16 +55,17 @@
 
 
         </div>
-    </header><!-- End Header -->
+    </header>
+    <!-- End Header -->
 
 
-    <main id="main">
+    <!-- <main id="main"> -->
 
         <section id="pricing" class="pricing">
             <div class="container">
-
                 <div class="row" style="margin-left: 35%;">
                     <div class="col-sm-6">
+                        <img src="<?= base_url() ?>assets/img/logo-login.png" class="img-fluid">
                         <div class="card">
                             <div class="card-body">
                                 <h5><?= $this->session->flashdata('success') ?></h5>
@@ -97,7 +98,8 @@
                 </div>
         </section>
 
-    </main><!-- End #main -->
+    <!-- </main> -->
+    <!-- End #main -->
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

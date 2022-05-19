@@ -58,13 +58,14 @@
     </header><!-- End Header -->
 
 
-    <main id="main">
+    <!-- <main id="main"> -->
 
         <section id="pricing" class="pricing">
             <div class="container">
 
                 <div class="row" style="margin-left: 35%;">
                     <div class="col-sm-6">
+                        <img src="<?= base_url() ?>assets/img/logo-login.png" class="img-fluid">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title text-center" style="margin-bottom: 50px; font-family: poppins; font-weight: bold;">Register</h4>
@@ -138,7 +139,8 @@
                 </div>
         </section>
 
-    </main><!-- End #main -->
+    <!-- </main> -->
+    <!-- End #main -->
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
